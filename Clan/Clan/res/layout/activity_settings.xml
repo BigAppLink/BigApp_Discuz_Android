@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.kit.widget.textview.GoBackTextView
+                android:id="@+id/gtvSuperSettings"
+                style="@style/go_textview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gotextview_height_default"
+                android:visibility="gone"
+                app:GoBackTextView_title="@string/super_settings" />
+
+            <include layout="@layout/include_line_thin" />
+
+            <com.kit.widget.textview.WithSegmentedControlTextView
+                android:id="@+id/wsctvShowGoToTop"
+                style="@style/with_segmented_control_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gotextview_height_default"
+                app:WithSegmentedControlTextView_title="@string/show_go_to_top" />
+
+            <include
+                layout="@layout/include_line_thin"
+                android:visibility="gone" />
+
+
+            <com.kit.widget.textview.GoBackTextView
+                android:id="@+id/gtvClearCache"
+                style="@style/go_textview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gotextview_height_default"
+                app:GoBackTextView_iv_go_src="@drawable/trans"
+                app:GoBackTextView_title="@string/clear_cache" />
+
+            <include layout="@layout/include_line_thin" />
+
+
+            <com.kit.widget.textview.GoBackTextView
+                android:id="@+id/gtvAbout"
+                style="@style/go_textview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gotextview_height_default"
+                app:GoBackTextView_title="@string/about" />
+
+            <include layout="@layout/include_gray_split_no_line" />
+
+
+            <com.kit.widget.textview.GoBackTextView
+                android:id="@+id/logout"
+                style="@style/go_textview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gotextview_height_default"
+                app:GoBackTextView_title="@string/logout" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

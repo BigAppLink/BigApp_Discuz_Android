@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="txt_act_publish_step_item">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/z_txt_c_act_publish_step_n</item>
+        <item name="android:paddingLeft">2sp</item>
+        <item name="android:paddingRight">2sp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

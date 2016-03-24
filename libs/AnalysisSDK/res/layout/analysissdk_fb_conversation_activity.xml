@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="#ff303537" >
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="9dp"
+            android:paddingRight="17dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="9dp"
+                android:background="@drawable/analysissdk_back_arrow" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/analysissdk_sharesdk_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="#ffcfcfcf"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imv_add_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:layout_gravity="right"
+            android:scaleType="fitCenter"
+            android:src="@drawable/analysissdk_menu_addcontact" />
+    </LinearLayout>
+
+    <!-- #ffe0e0e0 -->
+
+    <cn.sharesdk.feedback.ConversationListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#ffe0e0e0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:padding="5dip" >
+
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/analysissdk_fb_et_bg_selector"
+            android:minHeight="40dip"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_send_msg"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:layout_gravity="bottom|right"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/analysissdk_fb_btn_selector"
+            android:padding="2dip"
+            android:text="@string/analysissdk_btn_send_msg"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

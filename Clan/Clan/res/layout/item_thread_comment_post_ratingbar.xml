@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_line_thin" />
+
+    <com.kit.widget.textview.WithRatingBarTextView
+        android:id="@+id/wrbtv"
+        style="@style/with_ratingbar_textview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gotextview_height_default"
+        app:WithRatingBarTextView_title="@string/default_value" />
+
+</LinearLayout>

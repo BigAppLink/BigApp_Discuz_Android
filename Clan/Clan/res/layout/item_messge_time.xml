@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.youzu.clan.base.widget.list.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/content_border"
+    android:paddingLeft="@dimen/content_border"
+    android:paddingRight="@dimen/content_border"
+    android:paddingTop="@dimen/content_border">
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_message_time"
+        android:gravity="center"
+        android:paddingBottom="1dp"
+        android:layout_centerInParent="true"
+        android:paddingLeft="@dimen/content_border"
+        android:paddingRight="@dimen/content_border"
+        android:paddingTop="1dp"
+        android:text="@string/default_value"
+        android:textColor="@color/text_small"
+        android:layout_margin="@dimen/content_border"
+        android:textSize="@dimen/text_size_1" />
+</com.youzu.clan.base.widget.list.CheckableRelativeLayout>

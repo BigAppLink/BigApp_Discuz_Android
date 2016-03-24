@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_item"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:background="@null"
+            android:button="@drawable/selector_act_player_select"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingRight="16dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="70dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/z_bg_c_act_manage_check_status"
+            android:gravity="center"
+            android:text="@string/z_act_manage_check_null"
+            android:textColor="@color/z_txt_c_act_publish_step_n"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="52dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/z_txt_c_act_publish_step_n"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/z_bg_c_act_manage_check_status"
+        android:ellipsize="none"
+        android:maxLines="100"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:textColor="@color/z_txt_c_act_publish_step_n"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:text="@string/z_act_manage_player_info_more"
+        android:textColor="@color/z_txt_c_act_publish_item_content"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/v_margin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:visibility="gone" />
+</LinearLayout>

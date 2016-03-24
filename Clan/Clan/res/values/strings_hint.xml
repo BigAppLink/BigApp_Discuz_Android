@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hint_title">在此输入标题</string>
+    <string name="hint_say_sth">说点什么吧~</string>
+    <string name="hint_feedback_contact">您的联系方式，以便我们给您回复（选填）</string>
+    <string name="hint_feedback_content">在这里写下你的意见或建议吧</string>
+
+</resources>

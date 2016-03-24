@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="15dip"
+        android:gravity="center"
+        android:lineSpacingExtra="5dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#ff737373" />
+
+    <Button
+        android:id="@+id/btn_dialog_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/analysissdk_dialog_btn_back"
+        android:padding="10dip"
+        android:text="@string/analysissdk_ensure"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

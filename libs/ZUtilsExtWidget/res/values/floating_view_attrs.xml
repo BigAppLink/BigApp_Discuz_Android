@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FloatingView">
+        <attr name="FloatingView_drawable" format="integer"/>
+        <attr name="FloatingView_color" format="color"/>
+        <attr name="FloatingView_shadowRadius" format="float"/>
+        <attr name="FloatingView_shadowDx" format="float"/>
+        <attr name="FloatingView_shadowDy" format="float"/>
+        <attr name="FloatingView_shadowColor" format="integer"/>
+    </declare-styleable>
+
+</resources>

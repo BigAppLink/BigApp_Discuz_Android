@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ReboundListView">
+
+        <!-- 是否启用头部的progressbar -->
+        <attr name="ReboundListView_HeaderProgressBarEnabled" format="boolean" />
+
+        <!-- 是否启用头部的arrow -->
+        <attr name="ReboundListView_HeaderArrowEnabled" format="boolean" />
+
+        <!-- 是否启用头部的arrow -->
+        <attr name="ReboundListView_HeaderIconEnabled" format="boolean" />
+
+        <!-- 头部的日期 -->
+        <attr name="ReboundListView_HeaderTimeEnabled" format="boolean" />
+
+        <!-- 头部的arrow图片 -->
+        <attr name="ReboundListView_HeaderIconSrc" format="reference|color" />
+
+        <!-- 是否启用底部的progressbar -->
+        <attr name="ReboundListView_FooterProgressBarEnabled" format="boolean" />
+
+        <!-- 是否启用底部的textview -->
+        <attr name="ReboundListView_FooterTextViewEnabled" format="boolean" />
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ReboundListView_RefreshableViewBackground" format="reference|color" />
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ReboundListView_HeaderBackground" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ReboundListView_HeaderTextColor" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ReboundListView_HeaderSubTextColor" format="reference|color" />
+    </declare-styleable>
+
+</resources>

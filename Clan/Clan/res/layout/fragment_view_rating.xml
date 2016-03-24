@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@color/bg_light_gray"
+        android:paddingLeft="@dimen/margin_default_large_large_large"
+        android:paddingRight="@dimen/margin_default_large_large_large"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/account"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_4" />
+
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/credits"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_4"
+            android:typeface="sans" />
+
+
+        <TextView
+            android:id="@+id/tvReason"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvRateIntervalleTitle"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_weight="0.8"
+            android:textColor="@color/text_gray"
+            android:padding="@dimen/margin_default_large"
+            android:text="@string/rate_reason"
+            android:textSize="@dimen/text_size_4" />
+    </LinearLayout>
+
+    <include layout="@layout/include_line_thin" />
+
+    <com.youzu.clan.base.widget.list.RefreshListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:listSelector="@drawable/selector_list_item"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

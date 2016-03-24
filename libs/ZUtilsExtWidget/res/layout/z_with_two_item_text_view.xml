@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/z_view_line" />
+
+    <include
+        android:id="@+id/z_ll_item_1"
+        layout="@layout/z_layout_item" />
+
+    <include
+        layout="@layout/z_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="19dp" />
+
+    <include
+        android:id="@+id/z_ll_item_2"
+        layout="@layout/z_layout_item" />
+
+    <include layout="@layout/z_view_line" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_gray_split" />
+
+    <com.kit.widget.textview.WithSwitchButtonTextView
+        android:id="@+id/wsbtvEnableScrollViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gotextview_height_default"
+        android:background="@color/white"
+        android:padding="@dimen/content_border"
+        app:WithSwitchButtonTextView_title="@string/enable_srcoll_view_pager" />
+
+
+</LinearLayout>

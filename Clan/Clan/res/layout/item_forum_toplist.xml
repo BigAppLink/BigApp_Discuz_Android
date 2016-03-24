@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_line" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_list_item"
+        android:paddingLeft="@dimen/content_border">
+
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_top_forum"
+            android:paddingBottom="3dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="@string/sticky_post"
+            android:visibility="gone"
+            android:textColor="@color/text_red"
+            android:textSize="@dimen/text_size_1" />
+
+        <TextView
+            android:id="@+id/toplist_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/top"
+            android:paddingBottom="@dimen/padding_default"
+            android:paddingRight="@dimen/content_border"
+            android:paddingTop="@dimen/padding_default"
+            android:singleLine="true"
+            android:text="@string/default_value"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_4" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <drawable name="white">#FFFFFF</drawable>
+    <!--白色-->
+    <drawable name="black">#000000</drawable>
+    <!--黑色-->
+    <drawable name="ivory">#FFFFF0</drawable>
+    <!--象牙色-->
+    <drawable name="lightyellow">#FFFFE0</drawable>
+    <!--亮黄色-->
+    <drawable name="yellow">#FFFF00</drawable>
+    <!--黄色-->
+    <drawable name="snow">#FFFAFA</drawable>
+    <!--雪白色-->
+    <drawable name="floralwhite">#FFFAF0</drawable>
+    <!--花白色-->
+    <drawable name="lemonchiffon">#FFFACD</drawable>
+    <!--柠檬绸色-->
+    <drawable name="cornsilk">#FFF8DC</drawable>
+    <!--米绸色-->
+    <drawable name="seashell">#FFF5EE</drawable>
+    <!--海贝色-->
+    <drawable name="lavenderblush">#FFF0F5</drawable>
+    <!--淡紫红-->
+    <drawable name="papayawhip">#FFEFD5</drawable>
+    <!--番木色-->
+    <drawable name="blanchedalmond">#FFEBCD</drawable>
+    <!--白杏色-->
+    <drawable name="mistyrose">#FFE4E1</drawable>
+    <!--浅玫瑰色-->
+    <drawable name="bisque">#FFE4C4</drawable>
+    <!--桔黄色-->
+    <drawable name="moccasin">#FFE4B5</drawable>
+    <!--鹿皮色-->
+    <drawable name="navajowhite">#FFDEAD</drawable>
+    <!--纳瓦白-->
+    <drawable name="peachpuff">#FFDAB9</drawable>
+    <!--桃色-->
+    <drawable name="gold">#FFD700</drawable>
+    <!--金色-->
+    <drawable name="pink">#FFC0CB</drawable>
+    <!--粉红色-->
+    <drawable name="lightpink">#FFB6C1</drawable>
+    <!--亮粉红色-->
+    <drawable name="orange">#FFA500</drawable>
+    <!--橙色-->
+    <drawable name="lightsalmon">#FFA07A</drawable>
+    <!--亮肉色-->
+    <drawable name="darkorange">#FF8C00</drawable>
+    <!--暗桔黄色-->
+    <drawable name="coral">#FF7F50</drawable>
+    <!--珊瑚色-->
+    <drawable name="hotpink">#FF69B4</drawable>
+    <!--热粉红色-->
+    <drawable name="tomato">#FF6347</drawable>
+    <!--西红柿色-->
+    <drawable name="orangered">#FF4500</drawable>
+    <!--红橙色-->
+    <drawable name="deeppink">#FF1493</drawable>
+    <!--深粉红色-->
+    <drawable name="fuchsia">#FF00FF</drawable>
+    <!--紫红色-->
+    <drawable name="magenta">#FF00FF</drawable>
+    <!--红紫色-->
+    <drawable name="red">#FF0000</drawable>
+    <!--红色-->
+    <drawable name="oldlace">#FDF5E6</drawable>
+    <!--老花色-->
+    <drawable name="lightgoldenrodyellow">#FAFAD2</drawable>
+    <!--亮金黄色-->
+    <drawable name="linen">#FAF0E6</drawable>
+    <!--亚麻色-->
+    <drawable name="antiquewhite">#FAEBD7</drawable>
+    <!--古董白-->
+    <drawable name="salmon">#FA8072</drawable>
+    <!--鲜肉色-->
+    <drawable name="ghostwhite">#F8F8FF</drawable>
+    <!--幽灵白-->
+    <drawable name="mintcream">#F5FFFA</drawable>
+    <!--薄荷色-->
+    <drawable name="whitesmoke">#F5F5F5</drawable>
+    <!--烟白色-->
+    <drawable name="beige">#F5F5DC</drawable>
+    <!--米色-->
+    <drawable name="wheat">#F5DEB3</drawable>
+    <!--浅黄色-->
+    <drawable name="sandybrown">#F4A460</drawable>
+    <!--沙褐色-->
+    <drawable name="azure">#F0FFFF</drawable>
+    <!--天蓝色-->
+    <drawable name="honeydew">#F0FFF0</drawable>
+    <!--蜜色-->
+    <drawable name="aliceblue">#F0F8FF</drawable>
+    <!--艾利斯兰-->
+    <drawable name="khaki">#F0E68C</drawable>
+    <!--黄褐色-->
+    <drawable name="lightcoral">#F08080</drawable>
+    <!--亮珊瑚色-->
+    <drawable name="palegoldenrod">#EEE8AA</drawable>
+    <!--苍麒麟色-->
+    <drawable name="violet">#EE82EE</drawable>
+    <!--紫罗兰色-->
+    <drawable name="darksalmon">#E9967A</drawable>
+    <!--暗肉色-->
+    <drawable name="lavender">#E6E6FA</drawable>
+    <!--淡紫色-->
+    <drawable name="lightcyan">#E0FFFF</drawable>
+    <!--亮青色-->
+    <drawable name="burlywood">#DEB887</drawable>
+    <!--实木色-->
+    <drawable name="plum">#DDA0DD</drawable>
+    <!--洋李色-->
+    <drawable name="gainsboro">#DCDCDC</drawable>
+    <!--淡灰色-->
+    <drawable name="crimson">#DC143C</drawable>
+    <!--暗深红色-->
+    <drawable name="palevioletred">#DB7093</drawable>
+    <!--苍紫罗兰色-->
+    <drawable name="goldenrod">#DAA520</drawable>
+    <!--金麒麟色-->
+    <drawable name="orchid">#DA70D6</drawable>
+    <!--淡紫色-->
+
+    <drawable name="thistle">#D8BFD8</drawable>
+    <!--蓟色-->
+
+    <drawable name="lightgray">#D3D3D3</drawable>
+    <!--亮灰色-->
+
+    <drawable name="lightgrey">#D3D3D3</drawable>
+    <!--亮灰色-->
+
+    <drawable name="tan">#D2B48C</drawable>
+    <!--茶色-->
+
+    <drawable name="chocolate">#D2691E</drawable>
+    <!--巧可力色-->
+
+    <drawable name="peru">#CD853F</drawable>
+    <!--秘鲁色-->
+
+    <drawable name="indianred">#CD5C5C</drawable>
+    <!--印第安红-->
+
+    <drawable name="mediumvioletred">#C71585</drawable>
+    <!--中紫罗兰色-->
+
+    <drawable name="silver">#C0C0C0</drawable>
+    <!--银色-->
+
+    <drawable name="darkkhaki">#BDB76B</drawable>
+    <!--暗黄褐色-->
+
+    <drawable name="rosybrown">#BC8F8F</drawable>
+    <!--褐玫瑰红-->
+
+    <drawable name="mediumorchid">#BA55D3</drawable>
+    <!--中粉紫色-->
+
+    <drawable name="darkgoldenrod">#B8860B</drawable>
+    <!--暗金黄色-->
+
+    <drawable name="firebrick">#B22222</drawable>
+    <!--火砖色-->
+
+    <drawable name="powderblue">#B0E0E6</drawable>
+    <!--粉蓝色-->
+
+    <drawable name="lightsteelblue">#B0C4DE</drawable>
+    <!--亮钢兰色
+
+    -->
+
+    <drawable name="paleturquoise">#AFEEEE</drawable>
+    <!--苍宝石绿-->
+
+    <drawable name="greenyellow">#ADFF2F</drawable>
+    <!--黄绿色-->
+
+    <drawable name="lightblue">#ADD8E6</drawable>
+    <!--亮蓝色-->
+
+    <drawable name="darkgray">#A9A9A9</drawable>
+    <!--暗灰色-->
+
+    <drawable name="darkgrey">#A9A9A9</drawable>
+    <!--暗灰色-->
+
+    <drawable name="brown">#A52A2A</drawable>
+    <!--褐色-->
+
+    <drawable name="sienna">#A0522D</drawable>
+    <!--赭色-->
+
+    <drawable name="darkorchid">#9932CC</drawable>
+    <!--暗紫色-->
+
+    <drawable name="palegreen">#98FB98</drawable>
+    <!--苍绿色-->
+
+    <drawable name="darkviolet">#9400D3</drawable>
+    <!--暗紫罗兰色-->
+
+    <drawable name="mediumpurple">#9370DB</drawable>
+    <!--中紫色-->
+
+    <drawable name="lightgreen">#90EE90</drawable>
+    <!--亮绿色-->
+
+    <drawable name="darkseagreen">#8FBC8F</drawable>
+    <!--暗海兰色-->
+
+    <drawable name="saddlebrown">#8B4513</drawable>
+    <!--重褐色-->
+
+    <drawable name="darkmagenta">#8B008B</drawable>
+    <!--暗洋红-->
+
+    <drawable name="darkred">#8B0000</drawable>
+    <!--暗红色-->
+
+    <drawable name="blueviolet">#8A2BE2</drawable>
+    <!--紫罗兰蓝色-->
+
+    <drawable name="lightskyblue">#87CEFA</drawable>
+    <!--亮天蓝色-->
+
+    <drawable name="skyblue">#87CEEB</drawable>
+    <!--天蓝色-->
+
+    <drawable name="gray">#808080</drawable>
+    <!--灰色-->
+
+    <drawable name="grey">#808080</drawable>
+    <!--灰色-->
+
+    <drawable name="olive">#808000</drawable>
+    <!--橄榄色-->
+
+    <drawable name="purple">#800080</drawable>
+    <!--紫色-->
+
+    <drawable name="maroon">#800000</drawable>
+    <!--粟色-->
+
+    <drawable name="aquamarine">#7FFFD4</drawable>
+    <!--碧绿色-->
+
+    <drawable name="chartreuse">#7FFF00</drawable>
+    <!--黄绿色-->
+
+    <drawable name="lawngreen">#7CFC00</drawable>
+    <!--草绿色-->
+
+    <drawable name="mediumslateblue">#7B68EE</drawable>
+    <!--中暗蓝色
+
+    -->
+
+    <drawable name="lightslategray">#778899</drawable>
+    <!--亮蓝灰-->
+
+    <drawable name="lightslategrey">#778899</drawable>
+    <!--亮蓝灰-->
+
+    <drawable name="slategray">#708090</drawable>
+    <!--灰石色-->
+
+    <drawable name="slategrey">#708090</drawable>
+    <!--灰石色-->
+
+    <drawable name="olivedrab">#6B8E23</drawable>
+    <!--深绿褐色-->
+
+    <drawable name="slateblue">#6A5ACD</drawable>
+    <!--石蓝色-->
+
+    <drawable name="dimgray">#696969</drawable>
+    <!--暗灰色-->
+
+    <drawable name="dimgrey">#696969</drawable>
+    <!--暗灰色-->
+
+    <drawable name="mediumaquamarine">#66CDAA</drawable>
+    <!--中绿色
+
+    -->
+
+    <drawable name="cornflowerblue">#6495ED</drawable>
+    <!--菊兰色-->
+
+    <drawable name="cadetblue">#5F9EA0</drawable>
+    <!--军兰色-->
+
+    <drawable name="darkolivegreen">#556B2F</drawable>
+    <!--暗橄榄绿-->
+
+    <drawable name="indigo">#4B0082</drawable>
+    <!--靛青色-->
+
+    <drawable name="mediumturquoise">#48D1CC</drawable>
+    <!--中绿宝石 -->
+
+    <drawable name="darkslateblue">#483D8B</drawable>
+    <!--暗灰蓝色-->
+
+    <drawable name="steelblue">#4682B4</drawable>
+    <!--钢兰色-->
+
+    <drawable name="royalblue">#4169E1</drawable>
+    <!--皇家蓝-->
+
+    <drawable name="turquoise">#40E0D0</drawable>
+    <!--青绿色-->
+
+    <drawable name="mediumseagreen">#3CB371</drawable>
+    <!--中海蓝-->
+
+    <drawable name="limegreen">#32CD32</drawable>
+    <!--橙绿色-->
+
+    <drawable name="darkslategray">#2F4F4F</drawable>
+    <!--暗瓦灰色-->
+
+    <drawable name="darkslategrey">#2F4F4F</drawable>
+    <!--暗瓦灰色-->
+
+    <drawable name="seagreen">#2E8B57</drawable>
+    <!--海绿色-->
+
+    <drawable name="forestgreen">#228B22</drawable>
+    <!--森林绿-->
+
+    <drawable name="lightseagreen">#20B2AA</drawable>
+    <!--亮海蓝色-->
+
+    <drawable name="dodgerblue">#1E90FF</drawable>
+    <!--闪兰色-->
+
+    <drawable name="midnightblue">#191970</drawable>
+    <!--中灰兰色-->
+
+    <drawable name="aqua">#00FFFF</drawable>
+    <!--浅绿色-->
+
+    <drawable name="cyan">#00FFFF</drawable>
+    <!--青色-->
+
+    <drawable name="springgreen">#00FF7F</drawable>
+    <!--春绿色-->
+
+    <drawable name="lime">#00FF00</drawable>
+    <!--酸橙色-->
+
+    <drawable name="mediumspringgreen">#00FA9A</drawable>
+    <!--中春绿色-->
+
+    <drawable name="darkturquoise">#00CED1</drawable>
+    <!--暗宝石绿-->
+
+    <drawable name="deepskyblue">#00BFFF</drawable>
+    <!--深天蓝色-->
+
+    <drawable name="darkcyan">#008B8B</drawable>
+    <!--暗青色-->
+
+    <drawable name="teal">#008080</drawable>
+    <!--水鸭色-->
+
+    <drawable name="green">#008000</drawable>
+    <!--绿色-->
+
+    <drawable name="darkgreen">#006400</drawable>
+    <!--暗绿色-->
+
+    <drawable name="blue">#0000FF</drawable>
+    <!--蓝色-->
+
+    <drawable name="mediumblue">#0000CD</drawable>
+    <!--中兰色-->
+
+    <drawable name="darkblue">#00008B</drawable>
+    <!--暗蓝色-->
+
+    <drawable name="navy">#000080</drawable>
+    <!--海军色-->
+</resources>

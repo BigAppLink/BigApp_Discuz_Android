@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_default"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/content_border"
+                android:paddingRight="@dimen/content_border"
+                android:text="@string/cancel"
+
+                android:textColor="@color/text_dark_blue"
+                android:textSize="@dimen/text_size_2" />
+
+            <TextView
+                android:id="@+id/confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/content_border"
+                android:paddingRight="@dimen/content_border"
+                android:text="@string/confirm"
+                android:textColor="@color/text_dark_blue"
+                android:textSize="@dimen/text_size_2" />
+        </RelativeLayout>
+
+        <include layout="@layout/include_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+            <com.kit.widget.wheel.WheelView
+                android:id="@+id/forum"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <com.kit.widget.wheel.WheelView
+                android:id="@+id/thread"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <com.kit.widget.wheel.WheelView
+                android:id="@+id/subThread"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

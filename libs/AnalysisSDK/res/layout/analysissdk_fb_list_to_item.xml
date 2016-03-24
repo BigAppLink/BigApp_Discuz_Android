@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="2dip"
+        android:background="@drawable/analysissdk_fb_chat_time_bg"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="3dip"
+        android:paddingBottom="3dip"
+        android:text="早上 8:00"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip" 
+        android:paddingLeft="10dip"
+        android:paddingRight="15dip"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+        android:text="测试"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:background="@drawable/analysissdk_fb_chat_to_selector"/>
+
+</LinearLayout>

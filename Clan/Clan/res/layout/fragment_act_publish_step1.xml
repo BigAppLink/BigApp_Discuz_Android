@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/z_view_line" />
+
+        <com.kit.widget.textview.WithItemTextView
+            android:id="@+id/itv_forum"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/selector_list_item"
+            app:WithItemTextView_content="@string/z_act_publish_item_content_forum"
+            app:WithItemTextView_content_arrow="@drawable/ic_arrow_right"
+            app:WithItemTextView_content_color="@color/z_txt_c_act_publish_item_content"
+            app:WithItemTextView_name="@string/z_act_publish_item_name_forum"
+            app:WithItemTextView_name_color="@color/text_black_content" />
+
+        <include
+            android:id="@+id/itv_forum_line"
+            layout="@layout/z_view_line_padding_19" />
+
+        <com.kit.widget.textview.WithItemTextView
+            android:id="@+id/itv_name"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/selector_list_item"
+            app:WithItemTextView_content="@string/z_act_publish_item_content_name"
+            app:WithItemTextView_content_color="@color/text_black_content"
+            app:WithItemTextView_edit_hint_color="@color/z_txt_c_act_publish_item_content"
+            app:WithItemTextView_editable="true"
+            app:WithItemTextView_name="@string/z_act_publish_item_name_name"
+            app:WithItemTextView_name_color="@color/text_black_content" />
+
+        <include layout="@layout/z_view_line" />
+
+        <com.kit.widget.textview.WithItemTextView
+            android:id="@+id/itv_time"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_list_item"
+            app:WithItemTextView_content="@string/z_act_publish_item_content_time"
+            app:WithItemTextView_content_arrow="@drawable/ic_arrow_right"
+            app:WithItemTextView_content_color="@color/z_txt_c_act_publish_item_content"
+            app:WithItemTextView_name="@string/z_act_publish_item_name_time"
+            app:WithItemTextView_name_color="@color/text_black_content" />
+
+        <include layout="@layout/z_view_line_padding_19" />
+
+        <com.kit.widget.textview.WithItemTextView
+            android:id="@+id/itv_place"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/selector_list_item"
+            app:WithItemTextView_content="@string/z_act_publish_item_content_place"
+            app:WithItemTextView_content_color="@color/text_black_content"
+            app:WithItemTextView_edit_hint_color="@color/z_txt_c_act_publish_item_content"
+            app:WithItemTextView_editable="true"
+            app:WithItemTextView_name="@string/z_act_publish_item_name_place"
+            app:WithItemTextView_name_color="@color/text_black_content" />
+
+        <include layout="@layout/z_view_line" />
+
+        <com.kit.widget.textview.WithItemTextView
+            android:id="@+id/itv_catalog"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_list_item"
+            app:WithItemTextView_content="@string/z_act_publish_item_content_catalog"
+            app:WithItemTextView_content_arrow="@drawable/ic_arrow_right"
+            app:WithItemTextView_content_color="@color/z_txt_c_act_publish_item_content"
+            app:WithItemTextView_name="@string/z_act_publish_item_name_catalog"
+            app:WithItemTextView_name_color="@color/text_black_content" />
+
+        <include layout="@layout/z_view_line_padding_19" />
+
+        <com.kit.widget.textview.WithItemTextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/selector_list_item"
+            app:WithItemTextView_name="@string/z_act_publish_item_name_required"
+            app:WithItemTextView_name_color="@color/text_black_content" />
+
+        <com.youzu.clan.base.widget.InnerGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:columnWidth="100dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="auto_fit"
+            android:paddingBottom="20dp"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+        <include layout="@layout/z_view_line_padding_19" />
+
+        <com.kit.widget.textview.WithItemTextView
+            android:id="@+id/ll_not_required_title"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/selector_list_item"
+            android:visibility="gone"
+            app:WithItemTextView_name="@string/z_act_publish_item_name_not_required"
+            app:WithItemTextView_name_color="@color/text_black_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_not_required"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="20dp"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_not_required"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:gravity="start|top"
+                android:hint="@string/z_act_publish_item_name_not_required_hint"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:minHeight="100dp"
+                android:textColorHint="@color/z_txt_c_act_publish_item_content"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <include layout="@layout/z_view_line" />
+    </LinearLayout>
+</ScrollView>

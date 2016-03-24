@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:orientation="vertical">
+
+
+    <!--<include layout="@layout/include_gray_split" />-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top">
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:gravity="left"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/content_border"
+            android:text="@string/default_value"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subject"
+            android:layout_marginLeft="@dimen/margin_module"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+                <include layout="@layout/include_item_thread_images" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/include_item_search_thread_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        layout="@layout/include_line_thin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

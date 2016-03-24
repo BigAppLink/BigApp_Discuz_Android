@@ -1,0 +1,80 @@
+<resources>
+    <!--&lt;!&ndash;  tab字体4 &ndash;&gt;-->
+    <!--<style name="StyledIndicators" parent="@android:style/Theme.Light.NoTitleBar">-->
+        <!--<item name="vpiTabPageIndicatorStyle">@style/NormalTabPageIndicator</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; tab字体3 &ndash;&gt;-->
+    <!--<style name="StyledIndicatorsSmall" parent="@android:style/Theme.Light.NoTitleBar">-->
+        <!--<item name="vpiTabPageIndicatorStyle">@style/SmallTabPageIndicator</item>-->
+    <!--</style>-->
+
+    <style name="SmallTabPageIndicator" parent="NormalTabPageIndicator">
+        <item name="android:textSize">@dimen/text_size_3</item>
+    </style>
+
+    <style name="NormalTabPageIndicator" parent="Widget.TabPageIndicator">
+        <!-- 点击时在不同状态下显示的背景色 -->
+        <item name="android:background">@color/bg_title</item>
+        <!-- 分割线图片设置 -->
+        <item name="android:divider">@drawable/indicator_divider</item>
+        <!-- 设置分割线的显示位置，或是不显示 -->
+        <item name="showDividers">middle</item>
+        <item name="dividerPadding">10dp</item>
+
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textColor">@drawable/selector_tab_text</item>
+        <item name="android:textSize">@dimen/text_size_4</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:fadingEdgeLength">0dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+    </style>
+
+    <style name="SearchTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/selector_search_tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textColor">@color/selector_search_text</item>
+        <item name="android:textSize">@dimen/text_size_4</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+
+
+
+    <style name="PureAndroidTabPageIndicator" parent="Widget.TabPageIndicator">
+        <!-- 点击时在不同状态下显示的背景色 -->
+        <item name="android:background">@color/bg_title</item>
+        <!-- 分割线图片设置 -->
+        <item name="android:divider">@null</item>
+        <!-- 设置分割线的显示位置，或是不显示 -->
+        <item name="showDividers">none</item>
+        <item name="dividerPadding">10dp</item>
+
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textColor">@drawable/selector_tab_text</item>
+        <item name="android:textSize">@dimen/text_size_4</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:fadingEdgeLength">0dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+    </style>
+
+    <style name="PureAndroidSearchTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@color/white</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textColor">@color/selector_search_text</item>
+        <item name="android:textSize">@dimen/text_size_4</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+
+</resources>

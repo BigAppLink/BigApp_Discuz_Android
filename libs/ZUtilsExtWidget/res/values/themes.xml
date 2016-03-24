@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Application theme. -->
+
+
+    <!--<style name="Timetodo" parent="@android:style/Theme.Holo.Light">-->
+    <!--&lt;!&ndash; translucent system bars &ndash;&gt;-->
+    <!--<item name="android:windowTranslucentStatus">true</item>-->
+    <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    <!--<item name="android:windowActionBarOverlay">true</item>-->
+    <!--</style>-->
+
+    <style name="AppBaseTheme" parent="android:Theme.Black">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <!-- animation themes Dialog Activity LeftInLeftOut -->
+    <style name="Theme.DialogActivity.LeftInLeftOut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/Animation.DialogActivity.LeftInLeftOut
+        </item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <!-- animation themes Dialog Activity RightInRightOut -->
+    <style name="Theme.DialogActivity.RightInRightOut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/Animation.DialogActivity.RightInRightOut
+        </item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <!-- animation themes -->
+    <style name="Theme.Activity.RightInRightOut" parent="AppBaseTheme">
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.RightInRightOut</item>
+    </style>
+
+    <!-- animation themes -->
+    <style name="Theme.Activity.Main" parent="AppBaseTheme">
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.Main</item>
+    </style>
+
+
+</resources>

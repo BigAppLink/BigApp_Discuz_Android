@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_line_thin" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_default"
+        android:paddingLeft="@dimen/content_border"
+        android:paddingRight="@dimen/content_border">
+
+
+        <LinearLayout
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.kit.imagelib.widget.imageview.circleimageview.CircleImageView
+                android:id="@+id/photo"
+                style="@style/imageview_round"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/content_border"
+                android:layout_marginRight="@dimen/margin_module"
+                android:layout_marginTop="@dimen/content_border"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_protrait_solid" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/photo"
+                android:layout_marginBottom="@dimen/content_border"
+                android:gravity="center"
+                android:lines="1"
+                android:maxEms="5"
+                android:src="@drawable/ic_launcher"
+                android:text="@string/default_value"
+                android:textColor="@color/text_small"
+                android:textSize="@dimen/text_size_1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/user"
+            android:gravity="left|top"
+            android:lines="2"
+            android:text="@string/default_value"
+            android:textColor="@color/text_content_main"
+            android:textSize="@dimen/text_size_4" />
+
+        <RelativeLayout
+            android:id="@+id/forum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subject"
+            android:layout_marginTop="@dimen/margin_default_large_large"
+            android:layout_toLeftOf="@id/user">
+
+            <TextView
+                android:id="@+id/forum_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="@string/default_value"
+                android:textColor="@color/text_small"
+                android:textSize="@dimen/text_size_2" />
+
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/forum_name"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="@string/default_value"
+                android:textColor="@color/text_small"
+                android:textSize="@dimen/text_size_2" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@id/num"
+                android:layout_toRightOf="@id/num"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_pic_no_image_mode" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/include_line_thin" />
+</LinearLayout>

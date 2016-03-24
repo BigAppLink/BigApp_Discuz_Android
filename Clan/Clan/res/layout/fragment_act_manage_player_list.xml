@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/z_bg_c_act_manage_check_status"
+    android:orientation="vertical">
+
+    <com.youzu.clan.base.widget.list.RefreshListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:listSelector="#00000000"
+        android:overScrollMode="never"
+        android:paddingTop="10dp"
+        android:scrollbars="none" />
+
+    <include
+        android:id="@+id/ll_bottom"
+        layout="@layout/dialog_act_agree"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

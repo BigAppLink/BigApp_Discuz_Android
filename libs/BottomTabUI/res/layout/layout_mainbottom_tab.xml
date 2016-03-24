@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:background="@null"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.kit.bottomtabui.view.BottomItemView
+            android:id="@+id/main_bottom_tab_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/main_bottom_tab_text"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            app:BottomItemView_icon_margin="6dp"
+            app:BottomItemView_icon_normal="@drawable/ic_launcher"
+            app:BottomItemView_normal_color="@color/material_blue_grey_950"
+            app:BottomItemView_selected_color="#ff45C01A"
+            app:BottomItemView_text="text_here"
+            app:BottomItemView_text_size="11sp" />
+
+        <TextView
+            android:id="@+id/main_bottom_tab_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:textSize="12.5dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/main_bottom_tab_notify_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_round_red"
+            android:gravity="center_horizontal"
+            android:maxWidth="30dp"
+            android:singleLine="true"
+            android:text="1"
+            android:textColor="#FFFFFFFF"
+            android:textSize="10dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</LinearLayout>
+

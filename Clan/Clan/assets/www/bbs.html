@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width"
+          name="viewport">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2f5072">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>移动平台_BBS</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- artTemplate -->
+    <script src="js/template.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/json2.js"></script>
+    <!--<script type="text/javascript"-->
+    <!--src="http://www.9k9k.com/template/index/layout/js/jquery.js"></script>-->
+
+    <script>
+/*
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 20 * (clientWidth / 750) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+*/
+        function jump(){
+            var body = $("body, html");
+            var top = document.getElementById('superZhao').offsetTop; // Get position of the body
+            if(top!=0){
+                body.animate({scrollTop :top}, '500',function(){});
+            }
+        }
+
+        function clickImgEvent(e) {
+            //获取到所有图片的地址
+
+            /*
+            var srcList = [];
+            $(".p-content img")
+            .each(
+                function(){
+                    var src = $(this).attr("src");
+                    if(src.indexOf("bigapp:getsmile")<0){
+                            srcList.push(src);
+                    }
+                });
+            */
+
+            window.android.clickImgEvent(e.attr('src'));
+        }
+
+
+
+        function setImageList() {
+            //获取到所有图片的地址
+            var srcList = [];
+            $(".p-content img").each(
+                function(){
+                    var src = $(this).attr("src");
+                    if(src.indexOf("bigapp:getsmile")<0){
+                            srcList.push(src);
+                             $(this).src='http://avatar.csdn.net/5/3/0/1_yh801216.jpg';
+                    }
+                }
+            );
+            window.android.setImages(srcList);
+        }
+
+
+
+        function clickReplyBtnEvent(e) {
+
+            //alert('pid：'+e.attr('pid'));
+            //alert('position：'+e.attr('position'));
+
+            window.android.clickReplyBtnEvent(e.attr('position'))
+        }
+
+        function clickAvatarEvent(e) {
+            window.android.clickAvatarEvent(e.attr('uid'));
+        }
+
+
+        function clickVideoEvent(e){
+            alert("abc");
+            alert(e.attr("src"));
+        }
+
+        function setCommentsNext(page) {
+            var comments = eval("("+ window.android.getBBS() +")");
+            var htmlComments = template('tpl_comments', comments);
+
+            if(page == comments.totalpage-1){
+                var noMoreHtml = "<li><div class='nomore'><center>没有更多了~</center></div></li>";
+                htmlComments = htmlComments + noMoreHtml;
+            }
+
+            document.getElementById("commentsNext"+page).innerHTML = htmlComments;
+            resetBind();
+
+        }
+
+        function bindLike(){
+            // 点赞功能交互
+            // 点击变色，如果已经变色不做操作
+            // 默认给数字+1
+           $('.bbsBox .like').click(function(){
+                //alert("主题");
+                if(!$(this).hasClass('liked')){
+                    //setLike($(this));
+                    window.android.clickLikeEvent(0);
+                }
+
+           });
+
+           $('.replyBox .like').click(function(){
+                //alert("回复position:");
+                //alert( $(this).attr('position'));
+
+                if(!$(this).hasClass('liked')){
+                    //setLike($(this));
+                    window.android.clickLikeEvent($(this).attr('position'));
+                }
+           });
+
+        }
+
+
+
+        function setLikeById(position,pid,isAddOne){
+            var id = "info";
+
+            if(position>0){
+                id = 'comments'+pid;
+            }
+            //alert(id);
+            var e =$('#'+id +' .like');
+            //alert(e);
+            e.addClass('liked');
+            if(isAddOne){
+                e.find('span').html(parseInt(e.find('span').html())+1);
+            }else{
+                e.find('span').html(parseInt(e.find('span').html()))
+            }
+        }
+
+
+        function displayNoMore(page) {
+            var htmlComments = "<li class='nomore'><div><center>没有更多了~</center></div></li>";
+
+            //alert(htmlComments);
+
+            document.getElementById("commentsNext"+page).innerHTML = htmlComments;
+            resetBind();
+        }
+
+
+
+        function setBind() {
+
+
+            $(".btnReply").bind("click",function(){
+                clickReplyBtnEvent($(this));
+            });
+
+            $(".avatar").bind("click",function(){
+                clickAvatarEvent($(this));
+            });
+
+            $(".p-content img").bind("click",function(){
+                 clickImgEvent($(this));
+            });
+
+            bindLike();
+
+            $('.iyouzu_video').each(function(){
+                var ele = $(this);
+                ele.css('position','relative');
+                var src = ele.find('iframe').attr('src');
+                var layer = $('<div style="position: absolute; top:0; left:0; width:100%; height:100%; z-index:999; background:rgba(0,0,0,0);"><div>');
+                layer.click(function(){
+                  window.android.clickVideoEvent(src);
+                });
+                ele.append(layer);
+            })
+
+            //去除表情图片的点击事件
+            $(".p-content .smile-png").unbind("click");
+
+            setImageList();
+
+            //删除引用的换行
+            //$(".replyItems .reply_wrap br,.replyItems .quote br").remove();
+
+        }
+
+        function resetBind() {
+            $(".btnReply").unbind("click");
+            $(".avatar").unbind("click");
+            $(".p-content img").unbind("click");
+            $(".p-content .smile-png").unbind("click");
+            $(".like").unbind("click");
+
+            setBind();
+        }
+
+
+        function initWeb() {
+
+            //alert(window.android.getBBS());
+            //window.android.showSource(window.android.getBBS())
+            //var bbs = JSON.parse(window.android.getBBS());
+            var bbs = eval("("+ window.android.getBBS() +")");
+            //alert("parse bbs json ok");
+
+            var isJumpPage = JSON.parse(window.android.isJumpPage());
+
+            //alert(bbs.page);
+            //alert(isJumpPage);
+            //alert($(window).width());
+
+            //第一页的时候
+            if(bbs.page<=1 || isJumpPage){
+                var htmlBBS = template('tpl_bbs', bbs);
+                document.getElementById('div_bbs').innerHTML = htmlBBS;
+             }
+
+            setBind();
+        }
+
+
+
+
+
+
+
+    </script>
+    <script id="tpl_bbs" type="text/html">
+        <section id="main">
+            <!--thread即是主题-->
+            <section class="bbsBox card" id="info">
+                <div class="user-info">
+                    <div class="photo avatar" style="background-image:url({{thread.avatar}});"
+                         uid={{thread.authorid}}></div>
+                    <!--<img class="avatar" src={{thread.avatar}} alt=""-->
+                    <!--uid={{thread.authorid}} /></p>-->
+
+                    <div class="info-detail">
+                        <p class="name"><span>{{thread.author}}</span>
+                            <em class="tags tags-lz">楼主</em>
+                        </p>
+
+                        <p class="date">1楼&emsp;{{thread.dateline}}</p>
+                    </div>
+                </div>
+
+                <article>
+                    <h1>{{thread.subject}}</h1>
+
+                    <div class="p-content">
+                        {{#thread.message}}
+                    </div>
+                </article>
+                {{ if thread.enableRecommend == 1 }}
+                {{ if thread.recommended == 1 }}
+                <div class="like liked">
+                    {{ else }}
+                    <div class="like">
+                        {{ /if }}
+                        <div class="icon"></div>
+                        <div class="count">
+                            已有<span>{{thread.recommendAdd}}</span>人赞过
+                        </div>
+                    </div>
+                    {{ /if }}
+                </div>
+            </section>
+
+            <section class="replyBox card" id="superZhao">
+
+                <div class="reply-head">相关回复</div>
+                <ul class="replyItems">
+                    {{ if postlist.length == 1 }}
+                    {{ if member_uid != thread.authorid }}
+                    <li class="clearFix noReply">
+                        <article>暂无回复，赶快来抢沙发吧~</article>
+                    </li>
+                    {{ else }}
+                    <li class="clearFix noReply">
+                        <article>楼主很懒，什么都没留下~</article>
+                    </li>
+                    {{ /if }}
+                    {{ else }}
+                    {{ each postlist as model index }}
+                    {{ if page==1 && index ==0}}
+                    {{ else }}
+                    <li class="clearFix">
+                        <div class="user-info">
+                            <div class="photo avatar"
+                                 style="background-image:url({{model.avatar}});"
+                                 uid={{model.authorid}}></div>
+                            <!--<img class="avatar" src={{model.avatar}} alt=""-->
+                            <!--uid={{model.authorid}} />-->
+                            <!--</div>-->
+                            <div class="info-detail">
+                                <p class="name">
+                                    <span>{{model.author}}</span>
+                                    {{ if model.authorid == thread.authorid }}
+                                    <em class="tags tags-lz">楼主</em>
+                                    {{ /if }}
+                                </p>
+
+                                <p class="date">{{model.dateline}}</p>
+                            </div>
+                            <div class="floor">{{model.position}}楼</div>
+                        </div>
+                        <article>
+                            <div class="p-content">
+                                {{#model.message}}
+                            </div>
+                        </article>
+                        <div class="comments" id=comments{{model.pid}}>
+                            <a class="btnReply"
+                               pid={{model.pid}}
+                               tid={{model.tid}}
+                               index={{index}}
+                               position={{model.position}}
+                                    >
+                                <i class="icon icon-reply"></i>
+                            </a>
+                            {{ if model.enableSupport == 1 }}
+                            {{ if model.recommended == 1 }}
+                            <a class="like liked" href="javascript:;"
+                               position={{model.position}}><span>{{model.support}}</span><i
+                                    class="icon icon-like"></i></a>
+                            {{ else }}
+                            <a class="like" href="javascript:;" position={{model.position}}><span>{{model.support}}</span><i
+                                    class="icon icon-like"></i></a>
+                            {{ /if }}
+
+                            {{ /if }}
+                        </div>
+                    </li>
+                    {{ /if }}
+                    {{ /each }}
+
+                    <div id=commentsNext{{ page }}></div>
+
+                    {{ /if }}
+                </ul>
+
+            </section>
+
+        </section>
+    </script>
+
+
+    <script id="tpl_comments" type="text/html">
+
+        {{ each postlist as model index }}
+        <li class="clearFix">
+            <div class="user-info">
+                <div class="photo avatar" style="background-image:url({{model.avatar}});"
+                     uid={{model.authorid}}></div>
+                <!--<img class="avatar" src={{model.avatar}} alt=""-->
+                <!--uid={{model.authorid}} />-->
+                <!--</p>-->
+
+                <div class="info-detail">
+                    <p class="name">
+                        <span>{{model.author}}</span>
+                        {{ if model.authorid == thread.authorid }}
+                        <em class="tags tags-lz">楼主</em>
+                        {{ /if }}
+                    </p>
+
+                    <p class="date">{{model.dateline}}</p>
+                </div>
+                <div class="floor">{{model.position}}楼</div>
+            </div>
+
+            <article>
+                <div class="p-content">
+                    {{#model.message}}
+                </div>
+            </article>
+            <div class="comments" id=comments{{model.pid}}>
+                <a class="btnReply"
+                   pid={{model.pid}}
+                   tid={{model.tid}}
+                   index={{index}}
+                   position={{model.position}}
+                        >
+                    <i class="icon icon-reply"></i>
+                </a>
+                {{ if model.enableSupport == 1 }}
+                {{ if model.recommended == 1 }}
+                <a class="like liked" href="javascript:;" position={{model.position}}><span>{{model.support}}</span><i
+                        class="icon icon-like"></i></a>
+                {{ else }}
+                <a class="like" href="javascript:;" position={{model.position}}><span>{{model.support}}</span><i
+                        class="icon icon-like"></i></a>
+                {{ /if }}
+                {{ /if }}
+            </div>
+        </li>
+        {{ /each }}
+        <div id=commentsNext{{page}}></div>
+
+    </script>
+
+
+    <script id="tpl_no_more" type="text/html">
+        <li class="clearFix">
+            <article class="nomore">
+                没有更多了
+            </article>
+        </li>
+    </script>
+
+</head>
+<body>
+<!--<section id="main">-->
+<!--<div id="div_thread">-->
+<!--</div>-->
+<!--<div id="div_comments">-->
+<!--</div>-->
+<!--</section>-->
+<div id="div_bbs">
+</div>
+<script language="JavaScript" type="text/javascript">
+
+
+    window.onload=initWeb();
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

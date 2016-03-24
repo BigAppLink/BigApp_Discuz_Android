@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/newFriends"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/selector_list_item">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.kit.imagelib.widget.imageview.circleimageview.CircleImageView
+                style="@style/imageview_round"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/content_border"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/icon_friend_new_friend" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_friends_title"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_3" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/friend_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/content_border"
+            android:background="@drawable/bg_round_red"
+            android:gravity="center"
+            android:text="@string/default_value"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_4"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/line"
+            layout="@layout/include_line_thin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_divider"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout>

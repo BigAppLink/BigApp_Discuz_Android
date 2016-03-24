@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="GoBackTextView">
+
+        <!-- 控件背景 -->
+        <attr name="GoBackTextView_background" format="reference" />
+
+        <!-- 标题文字 -->
+        <attr name="GoBackTextView_title" format="string" />
+        <!-- 标题文字颜色 -->
+        <attr name="GoBackTextView_title_color" format="color" />
+        <!-- 标题文字大小 -->
+        <attr name="GoBackTextView_title_size" format="dimension" />
+
+        <!-- 从activity带回的文字 -->
+        <attr name="GoBackTextView_content" format="string" />
+        <!-- 从activity带回的文字颜色 -->
+        <attr name="GoBackTextView_content_color" format="color" />
+        <!-- 从activity带回的文字大小 -->
+        <attr name="GoBackTextView_content_size" format="dimension" />
+
+        <!-- 从activity带回的文字标题文字 -->
+        <attr name="GoBackTextView_content_title" format="string" />
+        <!-- 从activity带回的文字标题文字颜色 -->
+        <attr name="GoBackTextView_content_title_color" format="color" />
+        <!-- 从activity带回的文字标题文字大小 -->
+        <attr name="GoBackTextView_content_title_size" format="dimension" />
+
+
+        <!-- 从activity带回的文字标题文字hint大小 -->
+        <attr name="GoBackTextView_hint" format="string" />
+        <!-- 从activity带回的文字标题文字hint颜色 -->
+        <attr name="GoBackTextView_hint_color" format="color" />
+        <!-- 从activity带回的文字标题文字hint颜色 -->
+        <attr name="GoBackTextView_hint_size" format="dimension" />
+
+        <!-- 标题文字 -->
+        <attr name="GoBackTextView_margin" format="dimension" />
+        <!-- 标题文字 -->
+        <attr name="GoBackTextView_margin_left" format="dimension" />
+        <!-- 标题文字 -->
+        <attr name="GoBackTextView_margin_right" format="dimension" />
+
+        <!-- 从activity带回的文字,是否居左 -->
+        <attr name="GoBackTextView_is_gotext_left" format="boolean" />
+
+
+
+        <!-- 最右边图标（右箭头图标） -->
+        <attr name="GoBackTextView_iv_go_src" format="reference" />
+          <!-- 最右边图标是否启用（右箭头图标） -->
+        <attr name="GoBackTextView_iv_go_enabled" format="boolean" />
+    </declare-styleable>
+
+</resources>

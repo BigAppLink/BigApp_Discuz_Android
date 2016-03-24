@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff171b19"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.kit.imagelib.view.ScrollViewPager
+                android:id="@+id/imagebrowser_svp_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llPage"
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:layout_alignParentBottom="true"
+            android:background="#66000000"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip">
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/ic_del"
+                android:visibility="gone" />
+
+            <com.kit.imagelib.view.PhotoTextView
+                android:id="@+id/imagebrowser_ptv_page"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="11/11"
+                android:textColor="#ffcdcdcd"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

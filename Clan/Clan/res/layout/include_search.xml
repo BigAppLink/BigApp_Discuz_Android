@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/searchBar"
+    android:layout_height="@dimen/height_default"
+    android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/content_border"
+        android:src="@drawable/ic_back"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/searchBtn"
+        android:layout_toRightOf="@+id/backBtn">
+
+        <EditText
+            android:id="@+id/searchContent"
+            android:layout_width="fill_parent"
+            android:layout_height="31dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/bg_login_edit"
+            android:drawableLeft="@drawable/ic_search_search_icon"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/input_search_key"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="9dp"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textColorHint="#a6a6a6"
+            android:textSize="@dimen/text_size_2" />
+
+        <ImageView
+            android:id="@+id/deleteContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_search_delete_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:padding="6dp"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_3" />
+</RelativeLayout>

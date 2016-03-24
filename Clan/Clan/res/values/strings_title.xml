@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="thread_detail">主题详情</string>
+    <string name="article_detail">文章详情</string>
+    <string name="article_list">文章列表</string>
+    <string name="thread_reply">回复帖子</string>
+    <string name="my_pm">消息</string>
+    <string name="my_post">我的帖子</string>
+    <string name="my_home_page">我的主页</string>
+    <string name="other_page">TA的主页</string>
+    <string name="forum_name">BigApp</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="yz_login">游族帐号登录</string>
+    <string name="my_favories">我的收藏</string>
+    <string name="my_thread">我的帖子</string>
+    <string name="other_thread">TA的帖子</string>
+    <string name="new_thread">发表主题</string>
+    <string name="settings">设置</string>
+    <string name="about">关于我们</string>
+    <string name="my_friends_title">我的好友</string>
+    <string name="his_friends_title">TA的好友</string>
+    <string name="new_friends_title">新的好友</string>
+    <string name="add_friends_title">添加好友</string>
+    <string name="apply_friends_title">好友申请</string>
+    <string name="apply_act_title">参加活动</string>
+    <string name="comment_post_title">点评帖子</string>
+    <string name="rate_post_title">帖子评分</string>
+    <string name="viewrating_list_title">帖子评分列表</string>
+
+</resources>

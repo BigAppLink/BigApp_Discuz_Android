@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.youzu.clan.base.widget.list.SearchRefreshListview
+        android:id="@+id/searchListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:listSelector="@drawable/selector_list_item"
+        android:cacheColorHint="@color/transparent"
+        android:background="@color/white"
+        android:divider="@null"/>
+</RelativeLayout>

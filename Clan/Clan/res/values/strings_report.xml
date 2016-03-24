@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="defaultReport">
+        <item>广告垃圾</item>
+        <item>违规内容</item>
+        <item>恶意灌水</item>
+        <item>重复发帖</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="defaultMessageReport">
+        <item>色情低俗</item>
+        <item>广告骚扰</item>
+        <item>政治敏感</item>
+        <item>谣言</item>
+        <item>欺诈骗钱</item>
+        <item>违法（暴力恐怖、违禁品等）</item>
+        <item>售假投诉</item>
+    </string-array>
+</resources>

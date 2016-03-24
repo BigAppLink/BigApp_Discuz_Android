@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/res/com.kit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.kit.widget.listview.pulltorefreshlistview.PullToRefreshListView
+        android:id="@+id/pulltorefreshlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:transcriptMode="normal"
+        app:PullToRefreshListView_HeaderIconEnabled="@drawable/ic_launcher" />
+
+</RelativeLayout>

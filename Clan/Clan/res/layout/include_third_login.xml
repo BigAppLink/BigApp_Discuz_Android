@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/thirdLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_default"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_divider"
+            android:layout_centerVertical="true"
+            android:background="@color/divider_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_default"
+            android:layout_centerHorizontal="true"
+            android:background="@color/background"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_3"
+            android:padding="@dimen/content_border"
+            android:text="其他方式登录"
+            android:textColor="@color/gray" />
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/llEasterEgg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/content_border">
+
+        <!--<include layout="@layout/include_line_thin" />-->
+
+        <ImageView
+            android:id="@+id/qqLogin"
+            android:layout_width="40dp"
+            android:layout_height="@dimen/gotextview_height_default"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_login_qq"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/weiboLogin"
+            android:layout_width="40dp"
+            android:layout_height="@dimen/gotextview_height_default"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_login_weibo"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/wechatLogin"
+            android:layout_width="40dp"
+            android:layout_height="@dimen/gotextview_height_default"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_login_wechat"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

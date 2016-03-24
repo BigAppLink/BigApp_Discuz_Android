@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--2015-3-9-->
+    <declare-styleable name="CircleProgressBar">
+        <attr name="CircleProgressBar_max" format="integer" />
+        <!-- 进度条最大值 -->
+        <attr name="CircleProgressBar_fill" format="boolean" />
+        <!-- 是否填充圆形区域 -->
+        <attr name="CircleProgressBar_Paint_Width" format="integer" />
+        <!-- 画笔宽度，填充模式下无效，会被重置为0 -->
+        <attr name="CircleProgressBar_Paint_Color" format="integer" />
+        <!-- 画笔颜色 -->
+        <attr name="CircleProgressBar_Inside_Interval" format="integer" />
+        <!-- 圆形区域向里缩进的距离 -->
+    </declare-styleable>
+
+</resources>

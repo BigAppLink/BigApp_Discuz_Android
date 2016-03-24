@@ -1,0 +1,122 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <style name="ActionBarThemeNoTabPageIndicatorStyle" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/bg_title</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/bg_title</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/bg_title</item>
+
+        <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+
+
+        <!-- 去除actionbar下面的阴影Start-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除actionbar下面的阴影End-->
+
+        <item name="actionBarStyle">@style/ActionBar.Base</item>
+        <item name="actionBarSize">@dimen/height_navigation</item>
+        <item name="actionMenuTextAppearance">@style/ActionBarMenu.Text</item>
+        <item name="actionBarPopupTheme">@style/ActionBarPopupTheme.Base</item>
+        <item name="actionOverflowMenuStyle">@style/ActionOverflowMenuStyle.Base</item>
+    </style>
+
+    <style name="ActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/bg_title</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/bg_title</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/bg_title</item>
+
+        <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+
+
+        <!-- 去除actionbar下面的阴影Start-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除actionbar下面的阴影End-->
+
+        <item name="actionBarStyle">@style/ActionBar.Base</item>
+        <item name="actionBarSize">@dimen/height_navigation</item>
+        <item name="actionMenuTextAppearance">@style/ActionBarMenu.Text</item>
+       <!-- <item name="vpiTabPageIndicatorStyle">@style/NormalTabPageIndicator</item>-->
+        <item name="actionBarPopupTheme">@style/ActionBarPopupTheme.Base</item>
+        <item name="actionOverflowMenuStyle">@style/ActionOverflowMenuStyle.Base</item>
+    </style>
+    <style name="ActionBarThemeYellowTabPageIndicator" parent="ActionBarTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/SearchTabPageIndicator</item>
+    </style>
+
+
+    <style name="NoActionBarTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/bg_title</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/bg_title</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/bg_title</item>
+
+        <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+
+
+        <!-- 去除actionbar下面的阴影Start-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除actionbar下面的阴影End-->
+
+        <item name="actionBarStyle">@style/ActionBar.Base</item>
+        <item name="actionBarSize">@dimen/height_navigation</item>
+        <item name="actionMenuTextAppearance">@style/ActionBarMenu.Text</item>
+        <item name="vpiTabPageIndicatorStyle">@style/NormalTabPageIndicator</item>
+        <item name="actionBarPopupTheme">@style/ActionBarPopupTheme.Base</item>
+        <item name="actionOverflowMenuStyle">@style/ActionOverflowMenuStyle.Base</item>
+    </style>
+
+    <style name="SearchTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/bg_title</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/bg_title</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/bg_title</item>
+
+        <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+
+
+        <!-- 去除actionbar下面的阴影Start-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除actionbar下面的阴影End-->
+
+        <item name="actionBarStyle">@style/ActionBar.Base</item>
+        <item name="actionBarSize">@dimen/height_navigation</item>
+        <item name="actionMenuTextAppearance">@style/ActionBarMenu.Text</item>
+        <item name="vpiTabPageIndicatorStyle">@style/SearchTabPageIndicator</item>
+        <item name="actionBarPopupTheme">@style/ActionBarPopupTheme.Base</item>
+        <item name="actionOverflowMenuStyle">@style/ActionOverflowMenuStyle.Base</item>
+    </style>
+    <!-- ActionOverflowMenuStyle styles -->
+    <style name="ActionOverflowMenuStyle.Base" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:popupBackground">@drawable/bg_menu</item>
+        <item name="android:dropDownVerticalOffset">0.5dip</item>
+    </style>
+
+
+    <!-- ActionBar styles -->
+    <!--<style name="ActionBar.Base" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">-->
+        <!--<item name="background">@color/bg_title</item>-->
+        <!--<item name="titleTextStyle">@style/ActionBar.TitleText</item>-->
+
+        <!--&lt;!&ndash; 去除actionbar下面的阴影Start&ndash;&gt;-->
+        <!--<item name="elevation">0dp</item>-->
+        <!--&lt;!&ndash; 去除actionbar下面的阴影End&ndash;&gt;-->
+
+    <!--</style>-->
+
+
+</resources>

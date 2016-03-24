@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="build_type">RELEASE</string>
+    <string name="version_name">1.0.0</string>
+    <integer name="version_code">8888</integer>
+    <!-- 内部版本 -->
+    <integer name="version_zhao">99999</integer>
+
+    <!-- 网上上传appicon之后的icon路径，分享的时候默认使用的网络icon路径，-->
+    <string name="icon_net_url">http://www.discuz.net/static/image/common/logo.png</string>
+
+    <!-- 是否启用分享功能，1代表启用，其它代表不启用 -->
+    <string name="is_use_share">1</string>
+    <!-- 具体是否启用微信、qq、微博分享，1或use_xx_ok代表使用，其它代表不使用-->
+    <string name="use_wechat">use_wechat_ok</string>
+    <string name="use_qq">use_qq_ok</string>
+    <string name="use_weibo">use_weibo_ok</string>
+
+    <!-- app 主题风格 1.tab风格，2.侧边栏风格，3.类QQ侧边栏风格，4.抽屉菜单风格, 99.QQ空间风格-->
+    <string name="custom_theme">1</string>
+
+    <!-- api地址 ：您的站点地址 + api/mobile/iyz_index.php-->
+    <string name="api_url">http://bbs.bigappdemo.com/api/mobile/iyz_index.php</string>
+    <string name="api_url_base">http://bbs.bigappdemo.com/</string>
+    <string name="api_url_path">api/mobile/iyz_index.php</string>
+</resources>

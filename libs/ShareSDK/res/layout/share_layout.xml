@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="50dp"
+        android:layout_above="@+id/shareLayout"
+        android:background="@drawable/shape_bottom_pop"/>
+
+    <LinearLayout android:id="@+id/shareLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <!--<include layout="@layout/include_line_thin" />-->
+
+
+        <GridView
+            android:id="@+id/share_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:background="#90ffffff"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="20dip" />
+
+        <!--<include layout="@layout/include_line_thin" />-->
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#90ffffff"
+            android:text="取消"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

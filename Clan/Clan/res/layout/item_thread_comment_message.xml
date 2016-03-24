@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_line_thin" />
+
+    <com.kit.widget.textview.GoBackTextView
+        android:id="@+id/gtv"
+        style="@style/go_textview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gotextview_height_default"
+        app:GoBackTextView_title="@string/select_rate_reason"
+        app:GoBackTextView_iv_go_src="@drawable/transparent"/>
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="@string/hint_say_sth"
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:singleLine="false"
+        android:textColor="@color/text_black_content"
+        android:textColorHint="@color/z_txt_c_act_publish_item_content"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

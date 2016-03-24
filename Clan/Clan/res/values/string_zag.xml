@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 购买帖子-->
+    <string name="z_thread_pay_author">作者：</string>
+    <string name="z_thread_pay_price">售价(%s)：</string>
+    <string name="z_thread_pay_netprice">作者所得(%s)：</string>
+    <string name="z_thread_pay_balance">购买后余额(%s)：</string>
+    <string name="z_thread_pay_title">购买主题</string>
+    <string name="z_thread_pay_btn_buy">购买</string>
+    <string name="z_thread_pay_toast_error_balance_no">您的余额不足，请去PC端充值</string>
+    <string name="z_thread_pay_toast_error_unknown">未知错误</string>
+
+    <!-- 日志 -->
+    <string name="z_blog_item_comments_and_time">|  回应%1$s&#160;&#160;&#160;&#160;%2$s</string>
+</resources>

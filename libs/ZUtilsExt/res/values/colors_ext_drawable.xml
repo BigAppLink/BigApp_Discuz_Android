@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="light_gray">#ffeeeeee</drawable>
+    <drawable name="light_gray1">#ffefeff0</drawable>
+    <drawable name="light_gray2">#ffe3e3e4</drawable>
+    <drawable name="light_gray3">#ffd8d8d8</drawable>
+    <drawable name="light_gray4">#ffc3c3c3</drawable>
+    <drawable name="light_gray5">#ffc4c4c5</drawable>
+    <drawable name="light_gray6">#ffc4c4c5</drawable>
+
+    <drawable name="dark_gray">#A9A9A9</drawable>
+
+    <drawable name="holo_blue">#FF33E5B5</drawable>
+
+    <drawable name="green_gray">#FF2B6188</drawable>
+    <drawable name="gray_half_2">#20808080</drawable>
+    <drawable name="gray_half_5">#50808080</drawable>
+    <drawable name="gray_half">#80808080</drawable>
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="transparent_black1">#10000000</drawable>
+    <drawable name="transparent_black2">#20000000</drawable>
+    <drawable name="transparent_black3">#30000000</drawable>
+    <drawable name="transparent_black4">#40000000</drawable>
+    <drawable name="transparent_black5">#50000000</drawable>
+    <drawable name="transparent_black6">#60000000</drawable>
+    <drawable name="transparent_black7">#70000000</drawable>
+    <drawable name="transparent_black8">#80000000</drawable>
+    <drawable name="transparent_black9">#90000000</drawable>
+    <drawable name="transparent_white1">#10FFFFFF</drawable>
+    <drawable name="transparent_white2">#20FFFFFF</drawable>
+    <drawable name="transparent_white3">#30FFFFFF</drawable>
+    <drawable name="transparent_white4">#40FFFFFF</drawable>
+    <drawable name="transparent_white5">#50FFFFFF</drawable>
+    <drawable name="transparent_white6">#60FFFFFF</drawable>
+    <drawable name="transparent_white7">#70FFFFFF</drawable>
+    <drawable name="transparent_white8">#80FFFFFF</drawable>
+    <drawable name="transparent_white9">#90FFFFFF</drawable>
+    <drawable name="transparent_white10">#AAFFFFFF</drawable>
+    <drawable name="transparent_white11">#BBFFFFFF</drawable>
+    <drawable name="transparent_white12">#CCFFFFFF</drawable>
+    <drawable name="transparent_white13">#DDFFFFFF</drawable>
+    <drawable name="transparent_white14">#EEFFFFFF</drawable>
+    <drawable name="transparent_white15">#FFFFFFFF</drawable>
+
+</resources>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BigApp</string>
+
+    <string name="version_display">版本号：%1$s</string>
+
+
+    <string name="or">或</string>
+    <string name="login_with_space">登 录</string>
+    <string name="bind_account">绑定帐号</string>
+
+    <string name="bind_with_space">绑 定</string>
+    <string name="account">用户名</string>
+    <string name="password">密码</string>
+    <string name="comfirm_password">确认密码</string>
+    <string name="input_nickname">请输入昵称</string>
+    <string name="email_address">邮箱</string>
+    <string name="auto_login_next">下次自动登录</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="click_to_login">点击头像登录</string>
+    <string name="please_input_account">请输入用户名</string>
+    <string name="please_input_username">请输入用户名</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="please_confirm_password">请确认密码</string>
+    <string name="please_input_email">请输入邮箱</string>
+    <string name="please_input_answer">请输入答案</string>
+    <string name="hint_safety_question">安全提问（如无设置请忽略）</string>
+    <string name="inconformity_password">密码不一致</string>
+    <string name="register_as_new_user">还没有账号的新用户</string>
+
+    <string name="send_msg">发消息</string>
+    <string name="add_friend">加好友</string>
+    <string name="delete_friend">删好友</string>
+    <string name="tips">提示</string>
+    <string name="empty_url">链接为空链接</string>
+    <string name="empty_tips">这里还什么都没有,赶快起来弄出一点动静吧~</string>
+    <string name="error_tips">哎哟，好像出错了</string>
+    <string name="load_again">加载失败，请点击页面重新加载</string>
+    <string name="list_loading">正在加载...</string>
+    <string name="newly_reply">最新回复</string>
+    <string name="newly_publish">最新发表</string>
+    <string name="qq_login">QQ登录</string>
+    <string name="weibo_login">微博登录</string>
+    <string name="wechat_login">微信登录</string>
+
+
+    <string name="default_value">--</string>
+    <string name="subject">主题</string>
+    <string name="post">帖子</string>
+    <string name="today">今日</string>
+    <string name="forum_author">版主:</string>
+    <string name="sticky_post">置顶</string>
+    <string name="sub_thread">子版块</string>
+    <string name="hot_new_thread">热门新帖</string>
+
+    <string name="order_by_newly_replay">已按最新回复排序</string>
+    <string name="order_by_newly_publish">已按最新发表排序</string>
+    <string name="order_by_hot">已按最新发表排序</string>
+    <string name="order_by_good">已按最新发表排序</string>
+    <string name="forum_threads">主题 \u3000%1$s星座 \u3000%2$s今日\u3000 %3$s</string>
+    <string name="friend_count">好友数</string>
+    <string name="thread_reply_count">回帖数</string>
+    <string name="thread_post_count">发帖数</string>
+    <string name="register_date">注册日期</string>
+    <string name="constellation">星座\u3000\u3000</string>
+    <string name="group_in">所在群组</string>
+    <!--<string name="resource">威望 %1$s  |  积分 %2$s  |  金钱 %3$s</string>-->
+    <string name="unregister_account">注销账号</string>
+    <string name="click_to_exit">再按一次退出应用</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="Search">搜索</string>
+
+    <string name="choose_forum">选择版块</string>
+
+    <string name="last_poster">最后发表：%1$s\u3000%2$s</string>
+    <string name="image_count">%dP</string>
+
+    <string name="edit">编辑</string>
+    <string name="delete_with_num">删除(%d)</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_failed">删除失败</string>
+    <string name="my_message">站内消息</string>
+
+    <string name="clear_cache">清除缓存</string>
+    <string name="clear_cache_success">清除缓存成功</string>
+
+    <string name="super_settings">超级设置</string>
+    <string name="show_go_to_top">详情页“回顶部”按钮位置</string>
+
+    <string name="version_name_title">版本号</string>
+    <string name="check_update">检查更新</string>
+
+    <string name="logout">退出登录</string>
+
+    <string name="only_look_author">只看楼主</string>
+    <string name="more">更多</string>
+
+
+    <string-array name="main_tab">
+        <item>门户</item>
+        <item>论坛</item>
+    </string-array>
+
+
+
+    <string-array name="pure_android_tab">
+        <item>门户</item>
+        <item>论坛</item>
+        <item>消息</item>
+    </string-array>
+
+    <string-array name="forumFilter">
+        <item>@string/thread_all</item>
+        <item>@string/thread_new</item>
+        <item>@string/thread_good</item>
+        <item>@string/thread_hot</item>
+    </string-array>
+
+    <string name="thread_all">全部</string>
+    <string name="thread_new">最新</string>
+    <string name="thread_good">精华</string>
+    <string name="thread_hot">热门</string>
+    <string name="thread_article">文章</string>
+
+
+
+    <string name="message_friends">好友消息</string>
+    <string name="message_notify">提醒</string>
+
+
+    <string name="reply">回复</string>
+    <string name="comment">评论</string>
+    <string name="reply_author">回复楼主</string>
+    <string name="page_number">%1$s 页</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="refreshing">正在刷新</string>
+    <string name="release_to_refresh">松开以刷新</string>
+
+    <string name="pull_to_load">上拉刷新</string>
+    <string name="loading">正在加载</string>
+    <string name="wait_a_moment">正在加载,请稍等</string>
+
+
+    <string name="release_to_load">松开以加载更多</string>
+
+
+    <string name="share">分享</string>
+    <string name="fav">收藏</string>
+    <string name="order">倒序查看</string>
+    <string name="jump">跳页</string>
+    <string name="jump_post">跳楼</string>
+    <string name="report">举报</string>
+    <string name="report_reason">请选择举报理由</string>
+    <string name="rate_reason">评分理由</string>
+    <string name="select_rate_reason">请选择评分理由</string>
+    <string name="discription">描述一下~</string>
+    <string name="nothing">神马都没有~</string>
+
+
+
+
+    <string name="commit">提交</string>
+    <string name="other">其他</string>
+
+    <string name="fav_alright">已收藏</string>
+
+
+    <string name="to_login_get_more">登录后有更多功能可使用哦~</string>
+
+
+    <string name="my_thread_post">我的主帖</string>
+    <string name="my_thread_reply">我的回帖</string>
+    <string name="my_profile_thread">我的帖子</string>
+
+    <string-array name="my_thread">
+        <item>@string/my_thread_post</item>
+        <item>@string/my_thread_reply</item>
+    </string-array>
+
+
+
+    <string name="super_setting_common">通用设置</string>
+    <string name="super_setting_type">个性设置</string>
+
+
+    <string-array name="super_setting">
+        <item>@string/super_setting_common</item>
+        <item>@string/super_setting_type</item>
+    </string-array>
+
+
+    <string name="my_fav_thread">帖子收藏</string>
+    <string name="my_fav_forum">版块收藏</string>
+    <string name="my_profile_fav">我的收藏</string>
+    <string name="my_fav_article">文章收藏</string>
+    <string name="my_friends">我的好友</string>
+
+    <string-array name="my_favorites">
+        <item>@string/my_fav_thread</item>
+        <item>@string/my_fav_forum</item>
+        <item>@string/my_fav_article</item>
+    </string-array>
+
+    <string name="main_style">主界面风格</string>
+
+    <string-array name="type_main">
+        <item>底部按钮风格</item>
+        <item>侧边栏风格</item>
+        <item>QQ侧边栏风格</item>
+        <item>纯净安卓风格</item>
+    </string-array>
+
+
+
+    <string-array name="my_message">
+        <item>@string/message_friends</item>
+        <item>@string/message_notify</item>
+    </string-array>
+
+    <string-array name="other_thread">
+        <item>TA的主帖</item>
+        <item>TA的回帖</item>
+    </string-array>
+
+    <string name="is_delete">确认删除？</string>
+
+    <string name="send_message">发消息</string>
+
+    <string name="search_thread">搜帖子</string>
+    <string name="search_forum">搜版块</string>
+    <string name="search_user">搜用户</string>
+    <string name="search_history">搜索历史</string>
+    <string name="delete_history_record">清空搜索记录</string>
+
+    <string name="input_search_key">请输入关键字</string>
+
+    <string name="no_search_data">无搜索结果\n换个关键字试试看</string>
+    <string-array name="searchTab">
+        <item>@string/search_thread</item>
+        <item>@string/search_forum</item>
+        <item>@string/search_user</item>
+    </string-array>
+
+
+    <string name="text_num_view">阅读 %1$s</string>
+    <string name="text_num_reply">回帖 %1$s</string>
+
+
+    <string name="rate_intervalle">评分区间</string>
+    <string name="today_remain">今日剩余</string>
+
+
+    <string name="num_today_post">今日：%1$s</string>
+    <string name="num_thread">主题：%1$s</string>
+    <string name="num_post">帖子数：%1$s</string>
+
+
+
+
+    <string name="picture">图片</string>
+
+
+    <string name="credits">积分</string>
+
+
+    <string name="search_friends">查找好友</string>
+    <string name="add_friends">加好友</string>
+    <string name="ignore_friends">忽略</string>
+    <string name="agreed_friends">已添加</string>
+    <string name="add_friends_by_name">通过用户名添加好友</string>
+    <string name="need_send_friends_apply">需要发送好友申请，最多10个字</string>
+    <string name="maybe_know_friends">可能认识的朋友</string>
+    <string name="i_am_">我是%1$s</string>
+    <string name="send_apply">发送</string>
+
+    <string name="not_allow_file_type"> 不允许上传%1$s类型的文件,这些类型文件将被忽略</string>
+    <string name="notice_test_build">您正在使用的版本为测试版，如需提交应用市场请上传您的Keystore文件重新签名打包APP。</string>
+    <string name="notice_error_build">我们无法与您的后台服务器通信，这可能是由于您没有安装我们的引导文件或者是临时的网络问题所导致的。您可以登录您的论坛后台->应用->BigApp移动客户端->我的APP页面查看解决方案；若您只是暂时的网络问题，则可以在网络信号好的情况下，重新打开APP进行尝试。您也可以联系我们的QQ:4006852216，我们将竭诚为您服务！</string>
+
+
+
+
+    <string-array name="show_go_to_top_items">
+        <item>左侧</item>
+        <item>禁用</item>
+        <item>右侧</item>
+    </string-array>
+
+
+    <string name="restart_use_it">重启生效</string>
+
+    <string name="little_tail">小尾巴</string>
+    <string name="tap_little_tail">在此输入炫酷的小尾巴</string>
+
+    <string name="mad_praise">点赞狂魔</string>
+    <string name="tap_mad_praise">点赞同时回复帖子,在此输入你回复的内容</string>
+
+    <string name="pre_look_pic_size">预览图片尺寸</string>
+    <string name="tap_pre_look_pic_size">设置尺寸如40_40，开启节省流量神器！</string>
+
+    <string name="look_pic_size">浏览图片尺寸</string>
+    <string name="tap_look_pic_size">设置尺寸如200_200，开启节省流量神器！</string>
+
+    <string name="enable_srcoll_view_pager">允许主界面滑动切换</string>
+    <string name="open_super">超级模式</string>
+    <string name="open_debug">启用调试</string>
+    <string name="open_immersive_mode">开启沉浸模式（安卓4.4以上可用）</string>
+    <string name="use_jpush">启用推送</string>
+
+    <string name="selecte_theme_color">选择主题颜色</string>
+
+    <string name="show_new_friends_in_chat_list">将“新的好友”提醒展示在聊天列表中</string>
+    <string name="show_group_and_register_date">将所在群组和注册时间展示在个人中心中</string>
+
+    <string name="pure_android_mode">纯净Android</string>
+
+    <string name="pic_mode">图片质量</string>
+    <string name="your_phone">你的联系方式</string>
+
+    <string name="homePage_config_error">首页配置加载失败\n</string>
+    <string name="content_config_error">初始化配置加载失败\n</string>
+    <string name="forum_data_error">版块数据加载失败\n</string>
+
+
+</resources>

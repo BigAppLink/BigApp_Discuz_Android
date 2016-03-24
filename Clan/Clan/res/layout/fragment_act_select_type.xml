@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/z_bg_c_act_publish_step">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/z_act_publish_type_selected_hint"
+            android:textColor="@color/z_txt_c_act_publish_step_n"
+            android:textSize="12sp" />
+
+        <include layout="@layout/z_view_line" />
+
+        <com.kit.widget.listview.MiniListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/z_item_line"
+            android:dividerHeight="0.5dp"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:listSelector="@drawable/selector_list_item"
+            android:scrollbars="none" />
+
+        <include layout="@layout/z_view_line" />
+
+        <include
+            layout="@layout/z_view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_item_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/et_custom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:hint="@string/z_act_publish_type_custom_hint"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColorHint="@color/z_txt_c_act_publish_item_content"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/z_ic_selected" />
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/z_view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>

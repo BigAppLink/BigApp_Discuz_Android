@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TopBar4Layout">
+
+        <!-- topbar 左按钮是否使用 -->
+        <attr name="topBar4Layout_leftBtnEabled" format="boolean" />
+        <!-- topbar 右按钮是否使用 -->
+        <attr name="topBar4Layout_rightBtnEabled" format="boolean" />
+        <!-- topbar 左按钮是否显示 -->
+        <attr name="topBar4Layout_leftBtnShow" format="boolean" />
+        <!-- topbar 右按钮是否显示 -->
+        <attr name="topBar4Layout_rightBtnShow" format="boolean" />
+        <!-- topbar 左按钮图标是否显示 -->
+        <attr name="topBar4Layout_ivLeftShow" format="boolean" />
+        <!-- topbar 右按钮图标是否显示 -->
+        <attr name="topBar4Layout_ivRightShow" format="boolean" />
+
+        <!-- topbar 进度是否显示(包含进度和刷新) -->
+        <attr name="topBar4Layout_progressBarEnabled" format="boolean" />
+
+        <!-- topbar 进度是否启用超时 -->
+        <attr name="topBar4Layout_progressBarTimeOutEnabled" format="boolean" />
+
+        <!-- topbar 进度超时时间 -->
+        <attr name="topBar4Layout_progressBarTimeOut" format="float" />
+        <!-- topbar 是否只有进度（进度跑完之后，隐藏进度条） -->
+        <attr name="topBar4Layout_onlyPBNoRefresh" format="boolean" />
+
+        <!-- progressbar图标 -->
+        <attr name="topBar4Layout_progressBarIndeterminateDrawable" format="reference" />
+
+        <!-- 左按钮图标 -->
+        <attr name="topBar4Layout_ivLeftSrc" format="reference" />
+        <!-- 右按钮图标 -->
+        <attr name="topBar4Layout_ivRightSrc" format="reference" />
+        <!-- 左按钮文字 -->
+        <attr name="topBar4Layout_tvLeftText" format="string" />
+        <!-- 右按钮文字 -->
+        <attr name="topBar4Layout_tvRightText" format="string" />
+        <!-- 标题文字 -->
+        <attr name="topBar4Layout_tvTitleText" format="string" />
+
+        <!-- 文字颜色 -->
+        <attr name="topBar4Layout_textColor" format="color" />
+        <!-- 标题文字颜色 -->
+        <attr name="topBar4Layout_titleColor" format="color" />
+    </declare-styleable>
+
+</resources>

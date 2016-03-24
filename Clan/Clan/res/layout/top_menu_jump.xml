@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_default">
+
+    <RelativeLayout
+        android:id="@+id/left"
+        android:layout_width="@dimen/height_default"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true">
+
+
+        <com.kit.imagelib.widget.imageview.roundedimageview.RoundedImageView
+            android:id="@+id/back"
+            style="@style/imageview_round"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_default"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_default_large"
+            android:padding="9dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back"
+            app:riv_oval="true" />
+
+
+        <com.kit.imagelib.widget.imageview.roundedimageview.RoundedImageView
+            android:id="@+id/photo"
+            style="@style/imageview_round"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_default"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_profile_topbar"
+            android:visibility="gone"
+            app:riv_oval="true" />
+
+        <com.kit.imagelib.widget.imageview.roundedimageview.RoundedImageView
+            android:id="@+id/red_dot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignRight="@id/photo"
+            android:layout_alignTop="@id/photo"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@color/red"
+            android:visibility="gone"
+            app:riv_oval="true" />
+
+        <ImageButton
+            android:id="@+id/ibEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/content_border"
+            android:layout_marginRight="@dimen/content_border"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_forum_edit"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="96dp"
+        android:layout_toRightOf="@+id/left"
+        android:gravity="center_vertical"
+        android:padding="@dimen/content_border"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_5" />
+
+    <LinearLayout
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/content_border"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_3"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/content_border"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_3"
+            android:visibility="gone" />
+
+
+        <ImageButton
+            android:id="@+id/ibMenu1"
+            android:layout_width="@dimen/width_default"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/ibMenu0"
+            android:layout_width="@dimen/width_default"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+
+        <ImageButton
+            android:id="@+id/ibSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/content_border"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_ic_sign_in"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

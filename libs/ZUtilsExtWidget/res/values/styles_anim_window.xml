@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 从下飞入  从下飞出 的窗口 -->
+    <style name="Anim.Window.BottomInBottomOut" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <!-- 从下飞入  从下飞出 的半部窗口 -->
+    <style name="Anim.Window.HalfBottomInBottomOut" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/half_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/half_bottom_out</item>
+    </style>
+
+    <!-- 从右飞入  从左飞出 的窗口 -->
+    <style name="Anim.Window.RightInLeftOut" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_right_in</item>
+        <item name="android:windowExitAnimation">@anim/push_left_out</item>
+    </style>
+
+    <!-- 从左飞入  从右飞出 的窗口 -->
+    <style name="Anim.Window.LeftInRightOut" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_left_in</item>
+        <item name="android:windowExitAnimation">@anim/push_right_out</item>
+    </style>
+
+    <!-- 从左飞入  从左飞出 的窗口 -->
+    <style name="Anim.Window.LeftInLeftOut" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_left_in</item>
+        <item name="android:windowExitAnimation">@anim/push_left_out</item>
+    </style>
+
+    <!-- 从右飞入  从右飞出 的窗口 -->
+    <style name="Anim.Window.RightInRightOut" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_right_in</item>
+        <item name="android:windowExitAnimation">@anim/push_right_out</item>
+    </style>
+
+    <!-- 从顶部飞入  从顶部飞出 的窗口 -->
+    <style name="Anim.Window.TopInTopOut" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_top_in</item>
+        <item name="android:windowExitAnimation">@anim/push_top_out</item>
+    </style>
+
+    <!-- 半高窗口 从顶部飞入  从顶部飞出 的窗口 -->
+    <style name="Anim.Window.HalfTopInTopOut" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/half_top_in</item>
+        <item name="android:windowExitAnimation">@anim/half_top_out</item>
+    </style>
+
+    <style name="Anim.Window.Dialog" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+
+</resources>

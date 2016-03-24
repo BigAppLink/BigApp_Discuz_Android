@@ -1,0 +1,35 @@
+//include ':android-support-v7-appcompat'
+include ':AppUtils'
+include ':pulltorefresh'
+include ':SlidingMenuLib'
+
+include ':android-viewbadger'
+include ':viewpageIndicator'
+include ':ShareSDK'
+include ':AnalysisSDK'
+include ':ImageLib'
+include ':ClanBase'
+include ':XhsEmoticonsKeyboard'
+include ':BottomTabUI'
+include ':EasterEgg'
+include ':ZUtils'
+include ':ZUtilsExt'
+include ':ZUtilsExtWidget'
+//include ':SwitchButton'
+include ':Clan'
+project(':Clan').projectDir = new File('Clan/Clan')
+project(':AppUtils').projectDir = new File('libs/AppUtils')
+project(':pulltorefresh').projectDir = new File('libs/pulltorefresh')
+project(':SlidingMenuLib').projectDir = new File('libs/SlidingMenuLib')
+project(':android-viewbadger').projectDir = new File('libs/android-viewbadger')
+project(':viewpageIndicator').projectDir = new File('libs/viewpageIndicator')
+project(':ShareSDK').projectDir = new File('libs/ShareSDK')
+project(':AnalysisSDK').projectDir = new File('libs/AnalysisSDK')
+project(':ImageLib').projectDir = new File('libs/ImageLib')
+project(':ClanBase').projectDir = new File('libs/ClanBase')
+project(':XhsEmoticonsKeyboard').projectDir = new File('libs/XhsEmoticonsKeyboard')
+project(':BottomTabUI').projectDir = new File('libs/BottomTabUI')
+project(':EasterEgg').projectDir = new File('libs/EasterEgg')
+project(':ZUtilsExtWidget').projectDir = new File('libs/ZUtilsExtWidget')
+project(':ZUtilsExt').projectDir = new File('libs/ZUtilsExt')
+project(':ZUtils').projectDir = new File('libs/ZUtils')

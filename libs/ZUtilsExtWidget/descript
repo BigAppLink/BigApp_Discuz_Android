@@ -1,0 +1,8 @@
+//ACTIVITY_ON_RESULT 请求标识
+
+ com.kit.widget.cityselector.CitySelectorConstant.ACTIVITY_ON_RESULT_CITY_SELECTOR_OK = 90+1;
+ 
+ com.kit.widget.photoseletor.PhotoSelector.ACTIVITY_ON_RESULT_CAMERA_WITH_DATA = 80+1;
+ com.kit.widget.photoseletor.PhotoSelector.ACTIVITY_ON_RESULT_PHOTO_PICKED_WITH_DATA = 80+2;
+ 
+ com.kit.widget.wheel.WheelConstant.ACTIVITY_ON_RESULT_CITY_SELECTOR_OK = 70 + 1;

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.youzu.clan.base.widget.list.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:background="@drawable/selector_list_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_line_thin" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/content_border">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_module"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:drawableLeft="@drawable/selector_list_item_checkbox"
+                android:focusable="false"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlUserIcon"
+                android:layout_width="@dimen/height_message"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/content_border"
+                android:layout_toRightOf="@id/checkbox">
+
+                <com.kit.imagelib.widget.imageview.circleimageview.CircleImageView
+                    android:id="@+id/icon"
+                    style="@style/imageview_round"
+                    android:layout_width="@dimen/height_message"
+                    android:layout_height="@dimen/height_message"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_protrait_solid" />
+
+                <TextView
+                    android:id="@+id/newNotify"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_round_red"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/content_border"
+                android:src="@drawable/ic_arrow_right" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/arrow"
+                android:layout_toRightOf="@id/rlUserIcon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:paddingBottom="4dp"
+                    android:text="@string/default_value"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="2"
+                    android:text="@string/default_value"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_1" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/include_line_thin" />
+
+    </LinearLayout>
+</com.youzu.clan.base.widget.list.CheckableRelativeLayout>

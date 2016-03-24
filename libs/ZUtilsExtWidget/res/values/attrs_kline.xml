@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="KLineView">
+
+        <!-- KLineView 高度 -1:fill_parent|match_parent -2:warp_content -->
+        <attr name="KLineView_height" format="dimension" />
+
+        <!-- KLineView 宽度 -->
+        <attr name="KLineView_width" format="dimension" />
+
+        <!-- KLineView 背景渐变色 -->
+        <attr name="KLineView_gradientLine" format="reference" />
+
+        <!-- KLineView 宽度 -->
+        <attr name="KLineView_touchEnabled" format="boolean" />
+
+        <!-- 刻度尺上数字的颜色 -->
+        <attr name="KLineView_rulerNumColor" format="color" />
+        
+        <!-- 刻度尺的颜色 -->
+        <attr name="KLineView_rulerColor" format="color" />
+        
+        <!-- 曲线的颜色 -->
+        <attr name="KLineView_kLineColor" format="color" />
+        
+        <!-- 底纹的颜色 -->
+        <attr name="KLineView_shadeColor" format="color" />
+        
+        <!-- 刻度线粗细 -->
+        <attr name="KLineView_kLineThickness" format="color" />
+    </declare-styleable>
+
+</resources>

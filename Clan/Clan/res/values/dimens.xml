@@ -1,0 +1,73 @@
+<resources>
+	<dimen name="divider_border">0.5dp</dimen> <!-- 默认高度 -->
+
+
+	<dimen name="gotextview_height_default">50dp</dimen> <!-- 默认高度 -->
+
+	<dimen name="width_default">48dp</dimen> <!-- 默认宽度 -->
+	<dimen name="height_default">48dp</dimen> <!-- 默认高度 -->
+	<dimen name="margin_default_large_large_large_large">18dp</dimen> <!-- 默认边距 -->
+	<dimen name="margin_default_large_large_large">15dp</dimen> <!-- 默认边距 -->
+	<dimen name="margin_default_large_large">10dp</dimen> <!-- 默认边距 -->
+	<dimen name="margin_default_large">8dp</dimen> <!-- 默认边距 -->
+	<dimen name="margin_default_medium">5dp</dimen> <!-- 默认边距 -->
+	<dimen name="margin_default_small">2dp</dimen> <!-- 默认边距 -->
+
+	<dimen name="margin_left_right_default">12dp</dimen> <!-- 左右默认边距 -->
+	<dimen name="margin_top_bottom_default">10dp</dimen> <!-- 上下默认边距 -->
+
+	<dimen name="padding_default">10dp</dimen>
+
+	<!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+	<dimen name="height_navigation">48dp</dimen> <!-- 导航栏高度 -->
+	<dimen name="height_divider_thin">0.25dp</dimen> <!-- 分割线 -->
+	<dimen name="height_divider">0.5dp</dimen> <!-- 分割线 -->
+	<dimen name="height_single_item">33dp</dimen> <!-- 单行文本高度-->
+	<dimen name="height_message">42dp</dimen> <!-- 消息item默认高度 -->
+	<dimen name="margin_message">40dp</dimen> <!-- 消息item默认高度 -->
+
+	<dimen name="margin_module">12dp</dimen>   <!-- 模块边距 -->
+	<dimen name="content_border">10dp</dimen> <!-- 内容边距 -->
+
+	<!-- thread and article-->
+	<dimen name="text_size_ta_title">18dp</dimen>
+	<dimen name="text_size_ta_content">14dp</dimen>
+
+	<!-- 5种字体大小 -->
+	<dimen name="text_size_8">26dp</dimen>
+
+	<dimen name="text_size_7">22dp</dimen>
+	<dimen name="text_size_6">20dp</dimen>
+	<dimen name="text_size_5">18dp</dimen>
+	<dimen name="text_size_4">16dp</dimen>
+	<dimen name="text_size_3">15dp</dimen>
+	<dimen name="text_size_2">14dp</dimen>
+	<dimen name="text_size_1">12dp</dimen>
+	<dimen name="text_size_0">10dp</dimen>
+
+	<dimen name="text_size_dp_1">20dp</dimen>
+
+
+	<!-- 字体对应的行间距 -->
+	<dimen name="line_space_4">20dp</dimen>
+	<dimen name="line_space_2">21dp</dimen>
+	<dimen name="line_space_1">17dp</dimen>
+	
+	<dimen name="radius">4dp</dimen>  <!-- 圆角弧度 -->
+
+
+	<dimen name="slidingmenu_offset">90dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <integer name="num_cols">1</integer>
+	
+    
+    
+    
+</resources>
+

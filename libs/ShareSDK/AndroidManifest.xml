@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.sharesdk.demo"
+    android:versionCode="51"
+    android:versionName="2.6.0">
+
+    <!--<uses-permission android:name="android.permission.GET_TASKS" />-->
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <!--<uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>-->
+    <!--<uses-permission android:name="android.permission.GET_ACCOUNTS"/>-->
+    <!--&lt;!&ndash; 蓝牙分享所需的权限 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.BLUETOOTH" />-->
+    <!--<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />-->
+
+    <!--<supports-screens-->
+    <!--android:anyDensity="true"-->
+    <!--android:largeScreens="true"-->
+    <!--android:normalScreens="true"-->
+    <!--android:resizeable="true"-->
+    <!--android:smallScreens="true" />-->
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <!--<application-->
+    <!--android:icon="@drawable/blue_point"-->
+    <!--android:label="app_name"-->
+    <!--android:theme="@android:style/Theme.Light"-->
+    <!--android:debuggable="true" >-->
+    <!--<activity-->
+    <!--android:name="cn.sharesdk.demo.MainActivity"-->
+    <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+    <!--android:windowSoftInputMode="adjustPan|stateHidden" >-->
+    <!--<intent-filter>-->
+    <!--<action android:name="android.intent.action.MAIN" />-->
+
+    <!--<category android:name="android.intent.category.LAUNCHER" />-->
+    <!--</intent-filter>-->
+    <!--&lt;!&ndash;-->
+    <!--KakaoTalk ,分享应用的时候需要添加这个intent-filter,用于点击应用按钮跳转到APP-->
+    <!--其中android:scheme="kakaoc53410d71a7d6b96671aac1bd13a1982"是由"kakao"+APPKey-->
+    <!--&ndash;&gt;-->
+    <!--<intent-filter>-->
+    <!--<action android:name="android.intent.action.VIEW"/>-->
+    <!--<category android:name="android.intent.category.DEFAULT"/>-->
+    <!--<category android:name="android.intent.category.BROWSABLE"/>-->
+    <!--<data android:scheme="kakao48d3f524e4a636b08d81b3ceb50f1003" android:host="kakaolink" />-->
+    <!--</intent-filter>-->
+    <!--</activity>-->
+
+    <!--<activity-->
+    <!--android:name="com.mob.tools.MobUIShell"-->
+    <!--android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+    <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+    <!--android:windowSoftInputMode="stateHidden|adjustResize" >-->
+    <!--&lt;!&ndash;-->
+    <!--AuthorizeAdapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter-->
+    <!--的类，这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。-->
+    <!--开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。-->
+    <!--&ndash;&gt;-->
+    <!--<meta-data android:name="AuthorizeAdapter" android:value="cn.sharesdk.demo.MyAdapter" />-->
+
+    <!--&lt;!&ndash;-->
+    <!--QZoneWebShareAdapter表示一个继承自cn.sharesdk.tencent.qzone.QZoneWebShareAdapter-->
+    <!--的类，这个类可以监听到页面的生命周期，也可以获QQ空间网页分享权页面的各种UI控件。-->
+    <!--开发者可以通过继承QZoneWebShareAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。-->
+
+    <!--<meta-data android:name="QZoneWebShareAdapter" android:value="cn.sharesdk.demo.MyQZoneWebShareAdapter" />-->
+    <!--&ndash;&gt;-->
+    <!--&lt;!&ndash;-->
+    <!--Dropbox的SSO功能需要在此处添加一个对ACTION_VIEW事件的过滤器，其中的scheme是-->
+    <!--“db-”前缀再开发者应用的加上appKey。如果此过滤器不设置，则不能完成SSO功能授权-->
+    <!--&ndash;&gt;-->
+    <!--<intent-filter>-->
+    <!--<data android:scheme="db-7janx53ilz11gbs" />-->
+    <!--<action android:name="android.intent.action.VIEW" />-->
+    <!--<category android:name="android.intent.category.BROWSABLE"/>-->
+    <!--<category android:name="android.intent.category.DEFAULT" />-->
+    <!--</intent-filter>-->
+
+    <!--&lt;!&ndash;-->
+    <!--如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW-->
+    <!--事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置，-->
+    <!--则分享结束以后不能得到正确的回调-->
+    <!--&ndash;&gt;-->
+    <!--<intent-filter>-->
+    <!--<data android:scheme="tencent100371282" />-->
+    <!--<action android:name="android.intent.action.VIEW" />-->
+    <!--<category android:name="android.intent.category.DEFAULT" />-->
+    <!--<category android:name="android.intent.category.BROWSABLE" />-->
+    <!--</intent-filter>-->
+
+    <!--</activity>-->
+    <!--&lt;!&ndash; 微信分享回调 &ndash;&gt;-->
+    <!--<activity-->
+    <!--android:name=".wxapi.WXEntryActivity"-->
+    <!--android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+    <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+    <!--android:exported="true" />-->
+    <!--&lt;!&ndash; 易信分享回调 &ndash;&gt;-->
+    <!--<activity-->
+    <!--android:name=".yxapi.YXEntryActivity"-->
+    <!--android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+    <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+    <!--android:excludeFromRecents="true"-->
+    <!--android:exported="true"-->
+    <!--android:launchMode="singleTop" />-->
+
+    <!--&lt;!&ndash; 调用新浪原生SDK，需要注册的activity &ndash;&gt;-->
+    <!--<activity-->
+    <!--android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"-->
+    <!--android:configChanges="keyboardHidden|orientation"-->
+    <!--android:windowSoftInputMode="adjustResize"-->
+    <!--android:exported="false" >-->
+    <!--</activity>-->
+
+    <!--&lt;!&ndash; 调用新浪原生SDK，需要注册的回调activity &ndash;&gt;-->
+    <!--<activity-->
+    <!--android:name="cn.sharesdk.sina.weibo.SinaActivity"-->
+    <!--android:theme="@android:style/Theme.Translucent.NoTitleBar">-->
+    <!--<intent-filter>-->
+    <!--<action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />-->
+    <!--<category android:name="android.intent.category.DEFAULT" />-->
+    <!--</intent-filter>-->
+    <!--</activity>-->
+    <!--</application>-->
+
+</manifest>

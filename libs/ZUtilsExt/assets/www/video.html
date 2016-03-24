@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width"
+          name="viewport">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2f5072">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>移动平台_Video</title>
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+
+    <!-- artTemplate -->
+    <script src="js/template.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/json2.js"></script>
+    <!--<script type="text/javascript"-->
+    <!--src="http://www.9k9k.com/template/index/layout/js/jquery.js"></script>-->
+
+    <script>
+
+
+
+        function setBind() {
+
+            $('.iyouzu_video').each(function(){
+                var ele = $(this);
+                ele.css('position','relative');
+                var src = ele.find('iframe').attr('src');
+                var layer = $('<div style="position: absolute; top:0; left:0; width:100%; height:100%; z-index:999; background:rgba(0,0,0,0);"><div>');
+                layer.click(function(){
+                  window.android.clickVideoEvent(src);
+                });
+                ele.append(layer);
+            })
+        }
+
+
+        function resetBind() {
+//            $(".btnReply").unbind("click");
+
+            setBind();
+        }
+
+
+        function initWeb() {
+            //alert("initWeb");
+            var video = eval("("+ window.android.getVideoInfo() +")");
+            //alert("parse video json ok");
+
+            var htmlVideo = template('tpl_video', video);
+            //alert("template ok");
+
+            document.getElementById('div_video').innerHTML = htmlVideo;
+
+            //setBind();
+        }
+
+
+    </script>
+
+    <script id="tpl_video" type="text/html">
+        <div style="margin:-10px;" class="iyouzu_video_player">
+            <!-- 加的style 是为了全屏居中-->
+            <iframe style="display:block;margin:0 auto;"
+                    height={{videoHeight}}px
+                    width={{videoWidth}}px
+                    src={{videoPlayUrl}} frameborder="0" allowfullscreen="true">
+            </iframe>
+        </div>
+    </script>
+
+</head>
+
+<body>
+<div id="div_video">
+</div>
+<script language="JavaScript" type="text/javascript">
+        window.onload=initWeb();
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_color">#404040</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="topbar_color">#0077cc</color>
+    <color name="notification_color">#181818</color>
+</resources>

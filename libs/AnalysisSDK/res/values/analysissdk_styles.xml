@@ -1,0 +1,17 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AnalysisSDK_AppTheme" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+	
+    <!-- dialog -->
+    <style name="AnalysisSDK_CommonDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/analysissdk_dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <!-- check box -->
+    <style name="AnalysisSDK_UpdateCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/analysissdk_up_check_selector</item>
+    </style>
+</resources>

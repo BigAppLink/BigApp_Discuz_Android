@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llEasterEgg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--<include layout="@layout/include_line_thin" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/content_border"
+                android:text="此处高能⚡，请正确使用如下功能\n爽到？嘘~~~ 请不要声张~"
+                android:textColor="@color/gray_half_5"
+                android:textSize="8dp" />
+
+            <com.kit.widget.textview.WithSwitchButtonTextView
+                android:id="@+id/wsbtvSuperSetting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gotextview_height_default"
+                android:background="@color/white"
+                android:padding="@dimen/content_border"
+                app:WithSwitchButtonTextView_title="@string/open_super" />
+
+            <include layout="@layout/include_gray_split" />
+
+            <com.kit.widget.textview.WithSwitchButtonTextView
+                android:id="@+id/wsbtvDebug"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gotextview_height_default"
+                android:background="@color/white"
+                android:padding="@dimen/content_border"
+                app:WithSwitchButtonTextView_title="@string/open_debug" />
+
+            <include layout="@layout/include_gray_split" />
+
+            <com.kit.widget.textview.WithTitleTextView
+                android:id="@+id/wttvThemeColorSelector"
+                style="@style/with_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gotextview_height_default"
+                app:WithTitleTextView_content="███"
+                app:WithTitleTextView_content_color="@color/bg_title"
+                app:WithTitleTextView_title="@string/selecte_theme_color" />
+
+            <include layout="@layout/include_gray_split" />
+
+            <com.kit.widget.textview.WithSwitchButtonTextView
+                android:id="@+id/wsbtvOpenImmersiveMode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gotextview_height_default"
+                android:background="@color/white"
+                android:padding="@dimen/content_border"
+                app:WithSwitchButtonTextView_title="@string/open_immersive_mode" />
+
+            <include layout="@layout/include_gray_split" />
+
+            <com.kit.widget.textview.WithSwitchButtonTextView
+                android:id="@+id/wsbtvPush"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gotextview_height_default"
+                android:background="@color/white"
+                android:padding="@dimen/content_border"
+                app:WithSwitchButtonTextView_title="@string/use_jpush" />
+
+            <include layout="@layout/include_gray_split" />
+
+            <com.kit.widget.textview.WithSwitchButtonTextView
+                android:id="@+id/wsbtvShowNewFriendsInChatList"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gotextview_height_default"
+                android:background="@color/white"
+                android:padding="@dimen/content_border"
+                app:WithSwitchButtonTextView_title="@string/show_new_friends_in_chat_list" />
+
+            <include layout="@layout/include_gray_split" />
+
+            <com.kit.widget.textview.WithSwitchButtonTextView
+                android:id="@+id/wsbtvShowGroupAndRegisterDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gotextview_height_default"
+                android:background="@color/white"
+                android:padding="@dimen/content_border"
+                app:WithSwitchButtonTextView_title="@string/show_group_and_register_date" />
+
+
+            <include layout="@layout/include_gray_split" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/content_border">
+
+                <com.kit.widget.textview.WithSwitchButtonTextView
+                    android:id="@+id/scTail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gotextview_height_default"
+                    app:WithSwitchButtonTextView_title="@string/little_tail" />
+
+                <com.kit.widget.edittext.WithDelEditText
+                    android:id="@+id/wdetTail"
+                    style="@style/edit_del"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="-12dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_4"
+                    app:WithDelEditText_hint="@string/tap_little_tail" />
+            </LinearLayout>
+
+            <include layout="@layout/include_gray_split" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/content_border">
+
+                <com.kit.widget.textview.WithSwitchButtonTextView
+                    android:id="@+id/wsbtvPraise"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gotextview_height_default"
+                    app:WithSwitchButtonTextView_title="@string/mad_praise" />
+
+                <com.kit.widget.edittext.WithDelEditText
+                    android:id="@+id/wdetPraise"
+                    style="@style/edit_del"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="-12dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_4"
+                    app:WithDelEditText_hint="@string/tap_mad_praise" />
+            </LinearLayout>
+
+            <include layout="@layout/include_gray_split" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/content_border">
+
+                <com.kit.widget.textview.WithSwitchButtonTextView
+                    android:id="@+id/wsbtvPicSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gotextview_height_default"
+                    app:WithSwitchButtonTextView_title="@string/pre_look_pic_size" />
+
+                <com.kit.widget.edittext.WithDelEditText
+                    android:id="@+id/wdetPicSize"
+                    style="@style/edit_del"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="-12dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_4"
+                    app:WithDelEditText_hint="@string/tap_pre_look_pic_size" />
+            </LinearLayout>
+
+            <include layout="@layout/include_gray_split" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/content_border">
+
+                <com.kit.widget.textview.WithSwitchButtonTextView
+                    android:id="@+id/wsbtvLookPicSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gotextview_height_default"
+                    app:WithSwitchButtonTextView_title="@string/look_pic_size" />
+
+                <com.kit.widget.edittext.WithDelEditText
+                    android:id="@+id/wdetLookPicSize"
+                    style="@style/edit_del"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="-12dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_4"
+                    app:WithDelEditText_hint="@string/tap_look_pic_size" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

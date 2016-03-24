@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="register_success">注册成功</string>
+    <string name="register_failed">注册失败</string>
+    <string name="profile_failed">获取用户信息失败</string>
+
+
+
+
+    <string name="json_error">JSON解析错误</string>
+    <string name="load_success">加载成功</string>
+    <string name="load_failed">加载失败</string>
+
+    <string name="bind_failed">绑定失败</string>
+    <string name="bind_succeed">绑定成功</string>
+
+    <string name="login_failed">登录失败</string>
+    <string name="login_succeed">登录成功</string>
+
+    <string name="logout_failed">注销失败</string>
+    <string name="logout_succeed">注销成功</string>
+    
+
+
+
+    <!-- 异常信息 -->
+    <string name="server_error_data">服务器返回数据异常</string>
+    <string name="request_failed">请求失败</string>
+
+
+
+    <string name="noreply_yourself_error">您不能对自己点赞</string>
+
+
+
+
+
+    <string name="fav_success">收藏成功</string>
+    <string name="fav_fail">收藏失败</string>
+
+
+    <string name="fav_del_success">删除收藏成功</string>
+    <string name="fav_del_fail">删除收藏失败</string>
+
+    <string name="send">发帖</string>
+    <string name="upload_fail">上传失败</string>
+
+    <string name="check_post_success">发帖前置检查成功</string>
+    <string name="check_post_fail">发帖前置检查失败</string>
+
+    <string name="check_comment_success">点评前置检查成功</string>
+    <string name="check_comment_fail">点评前置检查失败</string>
+
+    <string name="comment_post_success">点评成功</string>
+    <string name="comment_post_fail">点评失败</string>
+
+
+    <string name="can_not_comment">您不能点评</string>
+    <string name="can_not_rate">您不能评分</string>
+
+
+    <string name="reply_success">回复成功</string>
+    <string name="reply_fail">回复失败</string>
+
+    <string name="new_thread_success">发表主题成功</string>
+    <string name="new_thread_fail">发表主题失败</string>
+
+    <string name="not_allow_reply">此人不允许你回复他的帖子</string>
+    <string name="not_allow_new_thread">此版块不允许你发新帖</string>
+
+    <!--<string name="fav_alright_message">已收藏，无需再收藏</string>-->
+
+    <string name="avatar_repalce_failed">头像修改失败</string>
+
+
+
+    <string name="had_praised">您已点过赞</string>
+    <string name="praised">已赞</string>
+    <string name="praise_failed">点赞失败</string>
+
+
+
+    <string name="copy_ok">链接已复制到剪切板</string>
+    <string name="copy_ok_default">已复制到剪切板</string>
+    <string name="check_update_failed">检查更新失败</string>
+    <string name="check_update_no_new">当前已是最新版本</string>
+
+    <string name="will_boom">再点我要炸了！！！</string>
+
+
+    <string name="send_success">发送成功</string>
+    <string name="send_fail">发送失败</string>
+
+    <string name="report_success">举报成功</string>
+
+    <string name="sign_in">签到</string>
+    <string name="sign_in_fail">签到失败</string>
+    <string name="sign_in_success">签到成功</string>
+    <string name="sign_in_toast">您已成功签到\n今日获得 %1$s %2$s</string>
+
+
+    <string name="download_emoji_fail">下载表情包失败</string>
+
+
+    <string name="response_empty">返回数据为空</string>
+    <string name="response_module_not_exists">调用接口发生错误，请检查插件是否正确安装</string>
+    <string name="response_not_json">返回数据格式错误</string>
+
+    <string name="no_qq_no_share">您还没有安装QQ，不能使用QQ分享</string>
+    <string name="no_wechat_no_share">您还没有安装微信，不能使用微信分享</string>
+
+</resources>

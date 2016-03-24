@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/rlJumpPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnCancel"
+            android:layout_width="@dimen/height_default"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_cancel" />
+
+        <TextView
+            android:id="@+id/tvPage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCancel"
+            android:layout_marginLeft="@dimen/margin_default_large_large_large"
+            android:layout_marginRight="@dimen/margin_default_large_large"
+            android:gravity="center_vertical|right"
+            android:minWidth="60dp"
+            android:text="@string/bind_account"
+            android:textColor="@color/text_azure"
+            android:textSize="@dimen/text_size_dp_1" />
+
+
+    </LinearLayout>
+</merge>

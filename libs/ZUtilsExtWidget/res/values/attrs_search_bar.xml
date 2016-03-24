@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SearchBar">
+
+        <!-- 搜索框内hint文字 -->
+        <attr name="searchbar_hint" format="string" />
+
+        <!-- 搜索框内hint文字颜色 -->
+        <attr name="searchbar_hint_text_color" format="color" />
+
+        <!-- 搜索框内文字大小 -->
+        <attr name="searchbar_edittext_text_size" format="dimension" />
+
+        <!-- 搜索框内文字颜色 -->
+        <attr name="searchbar_edittext_text_color" format="color" />
+
+        <!-- 搜索框底图 -->
+        <attr name="searchbar_edittext_background" format="reference" />
+
+        <!-- 搜索框前logo -->
+        <attr name="searchbar_logo" format="reference" />
+        <!-- 清除图标（触发清空的图标） -->
+        <attr name="searchbar_delete_icon" format="reference" />
+        <!-- 搜索图标（放大镜） -->
+        <attr name="searchbar_icon" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_subject_default_image" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_subject_default_image" />
+
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_subject_default_image" />
+
+        <RelativeLayout
+            android:id="@+id/rlImageNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/image3"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignTop="@id/image3">
+
+
+            <TextView
+                android:id="@+id/image_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_long_black"
+                android:paddingBottom="2dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="@dimen/padding_default"
+                android:paddingTop="2dp"
+                android:text="3P"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_1" />
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_pic" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

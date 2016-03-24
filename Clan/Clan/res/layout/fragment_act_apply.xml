@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/z_bg_c_act_manage_check_status">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:singleLine="false"
+            android:textSize="12sp" />
+
+        <include layout="@layout/z_view_line" />
+
+        <com.kit.widget.listview.MiniListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/z_list_line_padding_19"
+            android:dividerHeight="0.5dp"
+            android:listSelector="#00000000"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <include layout="@layout/z_view_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:singleLine="true"
+            android:text="@string/z_act_apply_leave_words_title"
+            android:textColor="@color/z_txt_c_act_publish_step_n"
+            android:textSize="12sp" />
+
+        <include layout="@layout/z_view_line" />
+
+        <EditText
+            android:id="@+id/et_leave_words"
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="@string/z_act_apply_leave_words"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionDone"
+            android:padding="20dp"
+            android:singleLine="false"
+            android:textColor="@color/text_black_content"
+            android:textColorHint="@color/z_txt_c_act_publish_item_content"
+            android:textSize="14sp" />
+
+        <include layout="@layout/z_view_line" />
+
+    </LinearLayout>
+</ScrollView>

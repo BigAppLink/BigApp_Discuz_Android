@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.keyboard.XhsEmoticonsKeyBoardBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    app:use_face="false">
+
+
+    <com.youzu.clan.message.pm.ChatListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:listSelector="@color/transparent"
+        android:scrollbars="vertical"
+        android:transcriptMode="normal" />
+</com.keyboard.XhsEmoticonsKeyBoardBar>

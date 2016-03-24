@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix,Orientation" >
+
+    <LinearLayout
+        android:id="@+id/wheel_view_outside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/wheel_view" />
+
+    <LinearLayout
+        android:id="@+id/wheel_view"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/wheel_layout_bg"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp" >
+
+            <com.kit.widget.wheel.WheelView
+                android:id="@+id/year"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.kit.widget.wheel.WheelView
+                android:id="@+id/month"
+                android:layout_width="100dp"
+                android:layout_height="match_parent" />
+
+            <com.kit.widget.wheel.WheelView
+                android:id="@+id/day"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

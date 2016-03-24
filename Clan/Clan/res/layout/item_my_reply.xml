@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/top"
+            layout="@layout/include_item_forum_thread_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_list_item"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/icon"
+                android:layout_below="@id/icon"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="@dimen/content_border"
+                android:text="@string/default_value"
+                android:textSize="@dimen/text_size_4" />
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/content"
+                android:layout_margin="@dimen/margin_module"
+                android:background="@drawable/bg_subject_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/content_border"
+                android:paddingRight="@dimen/content_border"
+                android:singleLine="true"
+                android:text="@string/default_value" />
+
+            <TextView
+                android:id="@+id/forum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subject"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/content_border"
+                android:paddingRight="@dimen/content_border"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical"
+                android:drawablePadding="3dp"
+                android:drawableLeft="@drawable/ic_forum_thread_name"
+                android:text="@string/default_value"
+                android:textColor="@color/text_small"
+                android:textSize="@dimen/text_size_3" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@id/subject"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/content_border"
+                android:paddingRight="@dimen/content_border"
+                android:paddingTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/include_item_forum_thread_view_replay" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/include_gray_split" />
+
+</LinearLayout>

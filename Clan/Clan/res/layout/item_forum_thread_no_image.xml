@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/include_gray_split_tiny" />-->
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/include_item_forum_thread_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/content_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon"
+            android:layout_toLeftOf="@+id/pic_exist"
+            android:gravity="left"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/content_border"
+            android:text="@string/default_value"
+            android:textColor="@color/text_black_ta_title"
+            android:textSize="@dimen/text_size_ta_title" />
+
+
+        <ImageView
+            android:id="@+id/pic_exist"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="@dimen/padding_default"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_pic_no_image_mode" />
+
+
+    </RelativeLayout>
+
+
+    <!--<include-->
+    <!--android:id="@+id/top"-->
+    <!--layout="@layout/include_item_forum_thread_no_image_top"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <include layout="@layout/item_forum_bottom" />
+
+
+    <include layout="@layout/include_gray_split_top_line" />
+
+
+</LinearLayout>

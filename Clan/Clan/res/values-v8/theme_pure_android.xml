@@ -1,0 +1,22 @@
+<resources>
+
+    <style name="PureAndroidSearchTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="vpiTabPageIndicatorStyle">@style/PureAndroidSearchTabPageIndicator</item>
+    </style>
+
+
+    <style name="PureAndroidActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- 去除actionbar下面的阴影Start -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除actionbar下面的阴影End -->
+
+        <item name="actionBarStyle">@style/ActionBar.Base</item>
+        <item name="actionBarSize">@dimen/height_navigation</item>
+        <item name="actionMenuTextAppearance">@style/ActionBarMenu.Text</item>
+        <item name="vpiTabPageIndicatorStyle">@style/PureAndroidTabPageIndicator</item>
+        <item name="actionBarPopupTheme">@style/ActionBarPopupTheme.Base</item>
+        <item name="actionOverflowMenuStyle">@style/ActionOverflowMenuStyle.Base</item>
+    </style>
+
+</resources>

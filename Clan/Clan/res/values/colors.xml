@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (C) 2012 Jake Wharton
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <color name="default_color">#ffffff</color>
+    <color name="color_white_50">#50ffffff</color>
+    <color name="color_white_90">#eeffffff</color>
+    <color name="color_white_pressed_90">#eecedae8</color>
+
+
+    <!-- 通用模块 start -->
+
+
+    <!-- 背景色 start -->
+
+
+    <!-- 底色 -->
+    <color name="background">#fff3f3f3</color>
+    <!-- 标题栏背景 -->
+    <color name="bg_title">#ff325376</color>
+    <!-- 模块背景 -->
+    <color name="bg_module">#ffffffff</color>
+
+    <color name="bg_popup">#1c3148</color>
+
+    <color name="bg_light_gray">#f8f8f8</color>
+
+    <!-- 背景色 end -->
+
+
+    <!-- 字体颜色 start -->
+
+    <!-- 导航栏字体颜色 -->
+    <color name="text_navigation">#ffffffff</color>
+    <!-- 导航栏右侧文字颜色 -->
+    <color name="text_navigation_right">#7fffffff</color>
+    <!-- 天蓝色 -->
+    <color name="text_azure">#ff0fa7ff</color>
+    <!-- 红色 -->
+    <color name="text_red">#ffFF5D4C</color>
+    <color name="text_deep_azure">#ff548be0</color>
+    <color name="text_azure_pressed">#7f0fa7ff</color>
+    <!-- 深蓝色 -->
+    <color name="text_dark_blue">#ff34567a</color>
+    <!-- 橙色 -->
+    <color name="text_orange">#ffff6000</color>
+
+    <!-- 黄色 -->
+    <color name="text_yellow">#FFFF9900</color>
+
+    <color name="notify_red">#FFF45E56</color>
+    <color name="white_little_gray">#FFFCFCFC</color>
+
+    <!-- 黑色 -->
+    <color name="text_black">#ff424242</color>
+    <color name="text_black_ta_title">#ff000000</color>
+    <color name="text_black_content">#AA303030</color>
+    <color name="text_black_selected">#7f000000</color>
+
+    <color name="text_gray">#ffa6a6a6</color>
+    <color name="text_dark_gray">#A9A9A9</color>
+
+    <color name="text_white">#ffffffff</color>
+
+    <color name="dark_gray">#A9A9A9</color>
+
+    <!-- 正文颜色 -->
+    <color name="text_content_main">#ff494949</color>
+    <!-- 版块名颜色 -->
+    <color name="text_forum">#ff1d1d1d</color>
+    <!-- 小字颜色 -->
+    <color name="text_small">#ffb0b0b0</color>
+
+    <!-- hint颜色 -->
+    <color name="text_hint">#ffa6a6a6</color>
+
+    <!-- 字体颜色 end -->
+    <color name="list_item_selected">#ffcedae8</color>
+    <color name="list_item_read">#7fdcdcdc</color>
+
+
+    <!-- 字体颜色 end -->
+    <color name="text_color_tab_selected">#ffffffff</color>
+    <color name="text_color_tab_normal">#80ffffff</color>
+
+    <!-- 分割线 -->
+    <color name="divider_line">#ffeaeaea</color>
+    <color name="divider_line2">#ffd9d9d9</color>
+
+
+    <!-- 分割线light -->
+    <color name="divider_line_light">#40d4d4d4</color>
+
+    <!-- 所有黑色半透明弹框背景 -->
+    <color name="bg_black_half_alpha">#88000000</color>
+
+    <!-- 所有list中tilte块的背景色 -->
+    <color name="bg_title_color">#FAFAFA</color>
+
+    <color name="bg_recom">#FAFAFA</color>
+
+
+    <!-- 通用模块 end -->
+
+
+</resources>

@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/margin_module">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_divider"
+                android:background="@color/divider_line" />
+
+            <com.kit.widget.edittext.WithDelEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/ic_login_user_edit"
+                android:drawablePadding="9dp"
+                android:gravity="center_vertical"
+                android:hint="@string/account"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_4"
+                app:WithDelEditText_background="@color/transparent"
+                app:WithDelEditText_hint="@string/account"
+                app:WithDelEditText_hint_color="@color/text_hint"
+                app:WithDelEditText_icon="@drawable/ic_login_user_edit" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_divider"
+                android:layout_marginLeft="48dp"
+                android:background="@color/divider_line" />
+
+
+            <com.kit.widget.edittext.WithDelEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/ic_login_user_edit"
+                android:drawablePadding="9dp"
+                android:gravity="center_vertical"
+                android:hint="@string/account"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_4"
+                app:WithDelEditText_background="@color/transparent"
+                app:WithDelEditText_hint="@string/email_address"
+                app:WithDelEditText_hint_color="@color/text_hint"
+                app:WithDelEditText_icon="@drawable/ic_login_email_edit" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_divider"
+                android:layout_marginLeft="48dp"
+                android:background="@color/divider_line" />
+
+            <com.kit.widget.edittext.PasswordEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/ic_login_user_edit"
+                android:drawablePadding="9dp"
+                android:gravity="center_vertical"
+                android:hint="@string/account"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_4"
+                app:PasswordEditText_background="@color/transparent"
+                app:PasswordEditText_hint="@string/password"
+                app:PasswordEditText_hint_color="@color/text_hint"
+                app:PasswordEditText_icon="@drawable/ic_login_lock_edit" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_divider"
+                android:layout_marginLeft="48dp"
+                android:background="@color/divider_line" />
+
+            <com.kit.widget.edittext.PasswordEditText
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/ic_login_user_edit"
+                android:drawablePadding="9dp"
+                android:gravity="center_vertical"
+                android:hint="@string/account"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_4"
+                app:PasswordEditText_background="@color/transparent"
+                app:PasswordEditText_hint="@string/comfirm_password"
+                app:PasswordEditText_hint_color="@color/text_hint"
+                app:PasswordEditText_icon="@drawable/ic_login_lock_edit" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_divider"
+                android:background="@color/divider_line" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/register"
+            style="@style/button_commit"
+            android:text="@string/register" />
+    </LinearLayout>
+
+</ScrollView>

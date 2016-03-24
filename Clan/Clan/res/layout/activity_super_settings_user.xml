@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llEasterEgg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--<include layout="@layout/include_line_thin" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/content_border"
+                android:text="此处高能⚡，请正确使用如下功能\n爽到？嘘~~~ 请不要声张~"
+                android:textColor="@color/gray_half_5"
+                android:textSize="8dp" />
+
+
+            <com.kit.widget.textview.WithSpinnerTextView
+                android:id="@+id/wstvTypeCheck"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gotextview_height_default"
+                android:background="@color/white"
+                android:padding="@dimen/content_border"
+                app:WithSpinnerTextView_title="@string/main_style" />
+
+            <LinearLayout
+                android:id="@+id/replace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

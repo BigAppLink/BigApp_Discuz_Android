@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#f6fbfa"
+    android:minHeight="50dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/ll_agree"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/selector_list_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/z_ic_act_player_agree"
+            android:drawablePadding="8dp"
+            android:text="@string/z_act_manage_player_agree"
+            android:textColor="@color/text_black_content"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:background="#999999" />
+
+    <RelativeLayout
+        android:id="@+id/ll_refuse"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/selector_list_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/z_ic_act_player_refuse"
+            android:drawablePadding="8dp"
+            android:text="@string/z_act_manage_player_refuse"
+            android:textColor="@color/z_txt_c_act_publish_step_n"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

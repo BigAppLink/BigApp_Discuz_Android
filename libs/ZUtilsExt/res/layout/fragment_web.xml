@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+      <com.kit.extend.ui.web.view.RefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.kit.extend.ui.web.webview.LoadMoreWebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true" />
+
+        <RelativeLayout
+            android:id="@+id/videoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- View that will be shown while the fullscreen video loads. For example you could include
+            a "Loading..." message. However, in this particular example this view is actually defined in
+            view_loading_video.xml and inflated programmatically in ExampleActivity.java. The reason for
+            this is to keep the main layout (this file) cleaner. -->
+            <!-- <View
+                android:id="@+id/videoLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" /> -->
+
+        </RelativeLayout>
+
+    </com.kit.extend.ui.web.view.RefreshLayout>
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:background="@color/white"
+        android:progressDrawable="@drawable/progress_bar_transparent_black5" />
+
+    <ImageButton
+        android:id="@+id/btnTop"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_back_to_top"
+        android:visibility="gone" />
+
+</RelativeLayout>

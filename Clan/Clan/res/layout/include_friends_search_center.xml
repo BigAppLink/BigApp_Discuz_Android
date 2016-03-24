@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchFriends"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_search_search_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/search_friends"
+            android:textColor="@color/text_hint"
+            android:textSize="@dimen/text_size_2" />
+    </LinearLayout>
+</LinearLayout>
+
+

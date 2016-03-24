@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <com.kit.imagelib.widget.imageview.circleimageview.CircleImageView
+        android:id="@+id/share_icon"
+        style="@style/imageview_round"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sns_qzone_icon" />
+
+
+    <TextView
+        android:id="@+id/share_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/default_value"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_size_2" />
+
+</LinearLayout>
+
+

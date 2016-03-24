@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/filterName"
+           android:layout_width="fill_parent"
+           android:textSize="@dimen/text_size_3"
+           android:textColor="@color/text_gray"
+           android:text="@string/thread_hot"
+           android:paddingLeft="@dimen/margin_default_large"
+           android:paddingTop="@dimen/margin_default_medium"
+           android:paddingBottom="@dimen/margin_default_medium"
+           android:paddingRight="@dimen/margin_default_large"
+           android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_line_thin"></include>
+
+</LinearLayout>

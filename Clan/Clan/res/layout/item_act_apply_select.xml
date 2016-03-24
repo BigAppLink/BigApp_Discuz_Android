@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_line_thin" />
+
+    <com.kit.widget.textview.GoBackTextView
+        android:id="@+id/gtv"
+        style="@style/go_textview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gotextview_height_default"
+        app:GoBackTextView_title="@string/about" />
+
+</LinearLayout>

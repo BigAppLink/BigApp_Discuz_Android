@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="20dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/z_act_manage_dialog_select"
+        android:textColor="@color/text_black_content"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/z_act_manage_refuse_reason"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="@color/text_black_content"
+        android:textColorHint="@color/z_txt_c_act_publish_step_n"
+        android:textSize="14sp" />
+
+    <include layout="@layout/z_view_line" />
+
+    <TextView
+        android:id="@+id/tv_refuse_zl"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/selector_list_item"
+        android:gravity="center"
+        android:text="@string/z_act_manage_refuse_zl"
+        android:textColor="@color/text_black_content"
+        android:textSize="14sp" />
+
+    <include layout="@layout/z_view_line" />
+
+    <TextView
+        android:id="@+id/tv_refuse_zj"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/selector_list_item"
+        android:gravity="center"
+        android:text="@string/z_act_manage_refuse_zj"
+        android:textColor="@color/text_black_content"
+        android:textSize="14sp" />
+
+    <include layout="@layout/z_view_line" />
+
+    <TextView
+        android:id="@+id/tv_refuse_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/selector_list_item"
+        android:gravity="center"
+        android:text="@string/btn_cancel"
+        android:textColor="@color/text_black_content"
+        android:textSize="14sp" />
+
+</LinearLayout>

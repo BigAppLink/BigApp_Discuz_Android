@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FloatingActionButton">
+        <attr name="FloatingActionButton_drawable" format="integer"/>
+        <attr name="FloatingActionButton_color" format="color"/>
+        <attr name="FloatingActionButton_shadowRadius" format="float"/>
+        <attr name="FloatingActionButton_shadowDx" format="float"/>
+        <attr name="FloatingActionButton_shadowDy" format="float"/>
+        <attr name="FloatingActionButton_shadowColor" format="integer"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,119 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppNoActionBarBaseTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBarOverlay">true</item>
+
+        <!-- 去除actionbar下面的阴影Start -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除actionbar下面的阴影End -->
+    </style>
+    <style name="AppActionBarBaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBarOverlay">true</item>
+
+        <!-- 去除actionbar下面的阴影Start -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除actionbar下面的阴影End -->
+    </style>
+
+
+    <style name="NoActionBarTheme" parent="AppNoActionBarBaseTheme">
+    </style>
+
+    <style name="SearchTheme" parent="AppNoActionBarBaseTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/SearchTabPageIndicator</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppNoActionBarBaseTheme">
+        <item name="android:windowFullscreen">true</item>
+        <!--<item name="android:windowBackground">@drawable/bg_splash</item>-->
+    </style>
+
+    <style name="ActionBarThemeNoTabPageIndicatorStyle" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- 去除actionbar下面的阴影Start -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除actionbar下面的阴影End -->
+
+        <item name="actionBarStyle">@style/ActionBar.Base</item>
+        <item name="actionBarSize">@dimen/height_navigation</item>
+        <item name="actionMenuTextAppearance">@style/ActionBarMenu.Text</item>
+        <item name="actionBarPopupTheme">@style/ActionBarPopupTheme.Base</item>
+        <item name="actionOverflowMenuStyle">@style/ActionOverflowMenuStyle.Base</item>
+    </style>
+
+    <style name="ActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- 去除actionbar下面的阴影Start -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除actionbar下面的阴影End -->
+
+        <item name="actionBarStyle">@style/ActionBar.Base</item>
+        <item name="actionBarSize">@dimen/height_navigation</item>
+        <item name="actionMenuTextAppearance">@style/ActionBarMenu.Text</item>
+        <!-- <item name="vpiTabPageIndicatorStyle">@style/NormalTabPageIndicator</item>-->
+        <item name="actionBarPopupTheme">@style/ActionBarPopupTheme.Base</item>
+        <item name="actionOverflowMenuStyle">@style/ActionOverflowMenuStyle.Base</item>
+    </style>
+
+    <style name="NoActionBarThemeYellowTabPageIndicator" parent="NoActionBarTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/SearchTabPageIndicator</item>
+    </style>
+
+    <style name="ActionBarThemeYellowTabPageIndicator" parent="ActionBarTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/SearchTabPageIndicator</item>
+    </style>
+
+
+    <style name="ActionBarTheme.Tab.Small" parent="@style/ActionBarTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/SmallTabPageIndicator</item>
+    </style>
+
+    <!-- actionbar menu text -->
+    <style name="ActionBarMenu.Text" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textSize">@dimen/text_size_4</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <!-- actionbar title -->
+    <style name="ActionBar.TitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/text_size_5</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="ActionBar.Base" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/bg_title</item>
+        <item name="backgroundStacked">@color/bg_title</item>
+        <item name="titleTextStyle">@style/ActionBar.TitleText</item>
+        <item name="actionBarDivider">@color/bg_title</item>
+
+        <!-- 去除actionbar下面的阴影Start-->
+        <item name="elevation">0dp</item>
+        <!-- 去除actionbar下面的阴影End-->
+    </style>
+
+    <!-- ActionBarPopupTheme styles -->
+    <style name="ActionBarPopupTheme.Base" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:colorBackground">@color/bg_popup</item>
+        <item name="titleTextStyle">@style/ActionBar.TitleText</item>
+    </style>
+
+    <!-- ActionOverflowMenuStyle styles -->
+    <style name="ActionOverflowMenuStyle.Base" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <!--<item name="android:popupBackground">@drawable/bg_popup_menu</item>-->
+        <item name="android:popupBackground">@drawable/bg_menu</item>
+        <item name="android:dropDownVerticalOffset">0.5dip</item>
+    </style>
+
+    <style name="TitleText">
+        <item name="android:textSize">@dimen/text_size_5</item>
+        <item name="android:textColor">@color/text_navigation</item>
+    </style>
+
+</resources>

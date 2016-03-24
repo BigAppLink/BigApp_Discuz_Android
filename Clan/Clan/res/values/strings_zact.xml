@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="z_act_publish_step_item_0">基本信息</string>
+    <string name="z_act_publish_step_item_1">活动介绍</string>
+    <string name="z_act_publish_step_item_2">发布成功</string>
+    <string name="z_act_publish_item_name_forum">版块</string>
+    <string name="z_act_publish_item_name_name">名称</string>
+    <string name="z_act_publish_item_name_time">时间</string>
+    <string name="z_act_publish_item_name_place">地点</string>
+    <string name="z_act_publish_item_name_catalog">类别</string>
+    <string name="z_act_publish_item_name_required">必填资料项</string>
+    <string name="z_act_publish_item_name_not_required">扩展字段信息(选填)</string>
+    <string name="z_act_publish_item_name_not_required_hint">请输入扩展字段信息(如果有多项，以英文逗号隔开, 最多支持%s项)</string>
+    <string name="z_act_publish_item_content_forum">选择版块</string>
+    <string name="z_act_publish_item_content_name">输入名称</string>
+    <string name="z_act_publish_item_content_time">选择时间</string>
+    <string name="z_act_publish_item_content_place">输入地点</string>
+    <string name="z_act_publish_item_content_catalog">选择类别</string>
+    <string name="z_act_top_btn_next">下一步</string>
+    <string name="z_act_top_btn_commit">提交</string>
+    <string name="z_act_publish_hint_input_act_desc">请输入活动详情介绍</string>
+    <string name="z_act_publish_title">发起活动</string>
+    <string name="z_thread_publish">发表帖子</string>
+    <string name="z_act_publish_type_selected_hint">请选择活动类型</string>
+    <string name="z_act_publish_type_custom_hint">自定义类型</string>
+
+    <string name="z_act_publish_select_type_title">活动类型</string>
+    <string name="z_act_publish_select_type_hint">请选择活动类型</string>
+    <!-- act manage -->
+    <string name="z_act_manage_title">管理活动</string>
+    <string name="z_act_manage_check_null">尚未审核</string>
+    <string name="z_act_manage_check_success">审核通过</string>
+    <string name="z_act_manage_check_fail">已打回</string>
+    <string name="z_act_manage_player_info_more">更多 ﹀</string>
+    <string name="z_act_manage_player_info_less">收起 ︿</string>
+    <string name="z_act_manage_player_agree">批准</string>
+    <string name="z_act_manage_player_refuse">拒绝</string>
+    <string name="z_act_manage_dialog_select">请选择</string>
+    <string name="z_act_manage_refuse_reason">拒绝活动申请的理由</string>
+    <string name="z_act_manage_refuse_zl">打回完善资料</string>
+    <string name="z_act_manage_refuse_zj">直接拒绝</string>
+    <string name="z_act_manage_player_info_leave_words_pre">留言：</string>
+    <string name="z_act_manage_player_info_leave_words_null">暂无留言信息</string>
+    <!-- act apply -->
+    <string name="z_act_apply_leave_words">我要留言</string>
+    <string name="z_act_apply_leave_words_title">我要留言(选填)</string>
+    <string name="z_act_apply_title">我要参加</string>
+    <string name="z_act_apply_select_common_title">请选择%s</string>
+    <string name="z_act_apply_input_hint">请输入%s</string>
+    <string name="z_act_apply_select_common_title_multi">请选择%s(多选)</string>
+    <string name="z_act_apply_warning">注意：参加本活动将消耗您 %1$s %2$s个</string>
+    <string name="z_act_apply_cancel">取消参加活动</string>
+    <string name="z_act_apply_hint_input_cancel_reason">请输入取消活动理由</string>
+    <string name="z_act_apply_extfield">%s(选填)</string>
+
+    <style name="Dialog_act_agree" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <!-- toast -->
+    <string name="z_act_publish_toast_not_support">该版块不支持活动</string>
+    <string name="z_thread_publish_toast_not_support">该版块不支持发普通主题</string>
+    <string name="z_act_publish_toast_name_null">请输入活动名称</string>
+    <string name="z_act_publish_toast_time_null">请选择活动时间</string>
+    <string name="z_act_publish_toast_place_null">请输入活动地点</string>
+    <string name="z_act_publish_toast_catalog_null">请选择活动类型</string>
+    <string name="z_act_publish_toast_desc_null">请输入活动介绍</string>
+    <string name="z_act_publish_toast_send_success">发布成功</string>
+    <string name="z_act_manage_toast_refuse_or_pass_fail">操作失败</string>
+    <string name="z_act_manage_toast_refuse_or_pass_success">操作成功</string>
+    <string name="z_act_manage_toast_apply_fail_info_null">所有非选填项均需要填写，请填写完整</string>
+    <string name="z_act_manage_toast_refuse_or_pass_null">请先勾选审核项</string>
+</resources>

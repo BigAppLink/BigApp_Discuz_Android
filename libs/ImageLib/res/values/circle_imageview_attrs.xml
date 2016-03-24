@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <!--填充色-->
+        <attr name="solid_color" format="color" />
+
+        <!--边框宽度-->
+        <attr name="border_width" format="dimension" />
+
+        <!--边框颜色-->
+        <attr name="border_color" format="color" />
+
+
+        <!--边框是否附着在图片上面-->
+        <attr name="border_overlay" format="boolean" />
+
+        <!--剪切边距-->
+        <attr name="border_crop" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:padding="@dimen/margin_default_large_large_large"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxHeight="180dp"
+            android:text="@string/default_value"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_4" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_default_large"
+            android:layout_marginRight="@dimen/margin_default_large"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/text_orange"
+                android:text="@string/default_value"
+                android:typeface="sans"
+                android:textSize="@dimen/text_size_8" />
+
+            <TextView
+                android:id="@+id/tvScoreTitle"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/tvScore"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/today_remain"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_5" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvReason"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_default"
+            android:layout_below="@+id/tvRateIntervalleTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.8"
+            android:background="@drawable/bg_round_corner_light_gray"
+            android:text="@string/default_value"
+            android:textSize="@dimen/text_size_4" />
+    </LinearLayout>
+
+    <include layout="@layout/include_line_thin" />
+
+</LinearLayout>

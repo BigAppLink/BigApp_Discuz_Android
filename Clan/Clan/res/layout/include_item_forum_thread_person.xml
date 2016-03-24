@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.kit.imagelib.widget.imageview.circleimageview.CircleImageView
+        android:id="@+id/icon"
+        style="@style/imageview_round"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/content_border"
+        android:layout_marginRight="10dp"
+        background="@drawable/loading_round"
+        android:src="@drawable/ic_protrait_solid" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/icon"
+        android:layout_toRightOf="@id/icon"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_value"
+            android:textColor="@color/bg_title"
+            android:textSize="@dimen/text_size_2" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="@string/default_value"
+            android:textColor="@color/text_small"
+            android:textSize="@dimen/text_size_0" />
+    </LinearLayout>
+</merge>

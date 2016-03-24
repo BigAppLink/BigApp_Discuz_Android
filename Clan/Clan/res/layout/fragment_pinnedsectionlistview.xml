@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.youzu.clan.base.widget.list.PinnedSectionRefreshListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:cacheColorHint="@color/transparent"
+    android:divider="@null"
+    android:listSelector="@drawable/selector_list_item"
+    android:overScrollMode="never"
+    android:scrollbars="none" />
+

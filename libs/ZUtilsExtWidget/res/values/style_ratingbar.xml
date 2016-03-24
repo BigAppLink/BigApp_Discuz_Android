@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ratingBarStyle" parent="@android:style/Widget.RatingBar">
+
+        <item name="android:progressDrawable">@drawable/ratingbar_drawable</item>
+
+        <!-- 这里的大小需要跟实际图片的大小一致才不会显示不全或者拉伸 -->
+        <item name="android:minHeight">30px</item>
+        <item name="android:maxHeight">30px</item>
+
+    </style>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llChat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_emoji_input_layout"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:padding="12dp">
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_multi_bg" />
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/btn_face"-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_marginRight="12dp"-->
+        <!--android:src="@drawable/ic_emoji_keyboad_show" />-->
+        <ToggleButton
+            android:id="@+id/btn_face"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@id/et"
+            android:layout_margin="@dimen/margin_default_large_large"
+            android:background="@drawable/toggle_btn_face"
+            android:scaleType="fitCenter"
+            android:textOff=""
+            android:textOn="" />
+
+
+        <com.keyboard.view.EmoticonsEditText
+            android:id="@+id/et_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_emoji_edit"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/say_sth"
+            android:inputType="text"
+            android:padding="6dp"
+            android:textColor="@color/text_black"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/btn_send"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/bg_round_corner_white"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="@string/send_away"
+            android:textColor="@color/text_black_content"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/replace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" />
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.youzu.clan.base.widget.list.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/margin_message"
+    android:paddingBottom="@dimen/content_border"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="@dimen/content_border"
+    android:paddingRight="@dimen/content_border"
+    android:paddingTop="@dimen/content_border">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_module"
+        android:button="@null"
+        android:checked="false"
+        android:clickable="false"
+        android:drawableLeft="@drawable/selector_list_item_checkbox"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="gone" />
+
+    <com.kit.imagelib.widget.imageview.circleimageview.CircleImageView
+        android:id="@+id/icon"
+        style="@style/imageview_round"
+        android:layout_width="@dimen/height_message"
+        android:layout_height="@dimen/height_message"
+        android:layout_marginRight="@dimen/content_border"
+        android:layout_toRightOf="@id/checkbox"
+        android:src="@drawable/ic_protrait_solid" />
+
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding_default"
+        android:layout_toRightOf="@id/icon"
+        android:background="@drawable/bg_message_other"
+        android:gravity="left|center_vertical"
+        android:minHeight="@dimen/height_message"
+        android:paddingBottom="2dp"
+        android:paddingLeft="@dimen/padding_default"
+        android:paddingTop="2dp"
+        android:text="@string/default_value"
+        android:textColor="@color/text_small"
+        android:textSize="@dimen/text_size_4" />
+
+
+
+</com.youzu.clan.base.widget.list.CheckableRelativeLayout>

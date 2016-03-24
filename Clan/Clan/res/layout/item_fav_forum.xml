@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.youzu.clan.base.widget.list.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_module"
+        android:button="@null"
+        android:checked="false"
+        android:clickable="false"
+        android:drawableLeft="@drawable/selector_list_item_checkbox"
+        android:focusable="false"
+        android:paddingLeft="@dimen/content_border"
+         />
+
+    <include
+        layout="@layout/item_forum_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/checkbox" />
+
+
+</com.youzu.clan.base.widget.list.CheckableRelativeLayout>

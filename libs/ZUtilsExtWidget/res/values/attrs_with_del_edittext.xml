@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="WithDelEditText">
+
+        <!-- 搜索框内hint文字 -->
+        <attr name="WithDelEditText_hint" format="string" />
+
+        <attr name="WithDelEditText_lines" format="integer" />
+
+        <attr name="WithDelEditText_maxLines" format="integer" />
+
+        <attr name="WithDelEditText_hint_color" format="color" />
+
+        <!-- 清除图标（触发清空的图标）-->
+        <attr name="WithDelEditText_delete_icon" format="reference" />
+
+
+
+        <attr name="WithDelEditText_icon" format="reference" />
+
+        <attr name="WithDelEditText_background" format="reference" />
+
+    </declare-styleable>
+
+</resources>

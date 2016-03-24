@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/z_view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingRight="16dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.keyboard.view.EmoticonsEditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_default_large"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:hint="@string/z_act_publish_hint_input_act_desc"
+                    android:inputType="textMultiLine"
+                    android:textCursorDrawable="@null"
+                    android:maxLines="10"
+                    android:minLines="5"
+                    android:paddingBottom="40dp"
+                    android:paddingLeft="@dimen/padding_default"
+                    android:paddingRight="@dimen/padding_default"
+                    android:paddingTop="@dimen/padding_default"
+                    android:textColor="@color/z_txt_c_act_publish_item_content"
+                    android:textSize="@dimen/text_size_3" />
+
+                <ToggleButton
+                    android:id="@+id/tb_emoticon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBottom="@id/et_content"
+                    android:layout_margin="@dimen/margin_default_large"
+                    android:background="@drawable/toggle_btn_face"
+                    android:scaleType="fitCenter"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <com.kit.imagelib.view.MyImageView
+                    android:id="@+id/iv_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/z_ic_add_cover" />
+
+                <ImageView
+                    android:id="@+id/iv_del"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:padding="2dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_del_x"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <include layout="@layout/z_view_line" />
+
+        <com.youzu.clan.base.widget.InnerGridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:cacheColorHint="@android:color/white"
+            android:columnWidth="100dp"
+            android:listSelector="@android:color/white"
+            android:numColumns="4"
+            android:paddingBottom="23dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            android:paddingTop="23dp"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+    </LinearLayout>
+</ScrollView>

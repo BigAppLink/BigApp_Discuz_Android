@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <cn.sharesdk.open.applist.AsyncImageIcon
+        android:id="@+id/imv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="2dip"
+        android:src="@drawable/ic_launcher"/>
+    <RelativeLayout
+        android:id="@+id/layout_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imv_icon"
+        android:layout_toLeftOf="@+id/imv_download">
+        <TextView 
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:text="back"/>
+        <TextView 
+            android:id="@+id/tv_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:text="APP LIST "/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imv_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:layout_marginLeft="5dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@android:drawable/stat_sys_download"/>
+</RelativeLayout>

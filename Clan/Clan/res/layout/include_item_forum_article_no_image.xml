@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/content_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/content_border"
+        android:text="@string/default_value"
+        android:textColor="@color/text_black_ta_title"
+        android:textSize="@dimen/text_size_ta_title" />
+
+
+    <TextView
+        android:id="@+id/content_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default_medium"
+        android:gravity="left"
+        android:maxLines="2"
+        android:paddingLeft="@dimen/content_border"
+        android:text="@string/default_value"
+        android:textColor="@color/text_black_content"
+        android:textSize="@dimen/text_size_ta_content" />
+
+    <TextView
+        android:id="@+id/content_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default_medium"
+        android:singleLine="true"
+        android:gravity="left"
+        android:drawablePadding="5dp"
+        android:paddingLeft="@dimen/content_border"
+        android:text="@string/default_value"
+        android:textColor="@color/text_small"
+        android:textSize="@dimen/text_size_2" />
+
+</LinearLayout>

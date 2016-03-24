@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlJumpPage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_default"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btnCancel"
+            android:layout_width="@dimen/height_default"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_cancel" />
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tvPage2"
+            android:layout_toRightOf="@+id/btnCancel"
+            android:gravity="center"
+            android:numeric="integer"/>
+
+        <TextView
+            android:id="@+id/tvPage2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="60dp"
+            android:gravity="center_vertical|right"
+            android:textSize="@dimen/text_size_dp_1"
+            android:textColor="@color/text_azure"
+            android:layout_toLeftOf="@+id/btnOk"
+            android:layout_marginLeft="@dimen/margin_default_large_large_large"
+            android:layout_marginRight="@dimen/margin_default_large_large"
+            />
+
+        <ImageButton
+            android:id="@+id/btnOk"
+            android:layout_width="@dimen/height_default"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_ok" />
+
+
+    </RelativeLayout>
+</merge>

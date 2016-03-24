@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_default"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:drawableLeft="@drawable/ic_login_safety_edit"
+        android:drawablePadding="9dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/content_border"
+        android:singleLine="true"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_3"/>
+
+    <include layout="@layout/include_line" />
+
+</LinearLayout>

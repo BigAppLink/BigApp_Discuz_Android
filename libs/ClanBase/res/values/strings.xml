@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Clan1.0a</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="or">或</string>
+    <string name="login_with_space">登 录</string>
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="comfirm_password">确认密码</string>
+    <string name="input_nickname">请输入昵称</string>
+    <string name="email_address">邮箱</string>
+    <string name="auto_login_next">下次自动登录</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="click_to_login">点击头像登录</string>
+    <string name="empty_input">请输入账号密码</string>
+    <string name="please_input_username">请输入用户名</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="please_confirm_password">请确认密码</string>
+    <string name="please_input_email">请输入邮箱</string>
+    <string name="inconformity_password">密码不一致</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_failed">注册失败</string>
+    <string name="profile_failed">获取用户信息失败</string>
+    <string name="send_msg">发消息</string>
+    <string name="empty_tips">这里还什么都没有,赶快起来弄出一点动静吧~</string>
+    <string name="error_tips">哎哟，好像出错了</string>
+    <string name="load_again">加载失败，请点击页面重新加载</string>
+    <string name="list_loading">正在加载...</string>
+    <string name="newly_reply">最新回复</string>
+    <string name="newly_publish">最新发表</string>
+    
+    
+    <string name="load_success">加载成功</string>
+    <string name="load_failed">加载失败</string>
+    <string name="logout_failed">注销失败</string>
+    <string name="logout_succeed">注销成功</string>
+
+    <string name="tap_to_input">点击来输入</string>
+
+
+
+    <string name="default_value">--</string>
+    <string name="subject">主题</string>
+    <string name="post">帖子</string>
+    <string name="today">今日</string>
+    <string name="forum_author">版主</string>
+    <string name="sticky_post">置顶</string>
+    
+    <string name="order_by_newly_replay">已按最新回复排序</string>
+    <string name="order_by_newly_publish">已按最新发表排序</string>
+    <string name="forum_threads">主题 \u3000%1$s星座 \u3000%2$s今日\u3000 %3$s</string>
+    <string name="thread_count">发帖数</string>
+    <string name="register_date">注册日期</string>
+    <string name="constellation">星座\u3000\u3000</string>
+    <string name="group_in">所在群组</string>
+    <!--<string name="resource">威望 %1$s  |  积分 %2$s  |  金钱 %3$s</string>-->
+    <string name="unregister_account">注销账号</string>
+    <string name="click_to_exit">再按一次退出应用</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    
+    <string name="last_poster">最后发表：%1$s\u3000%2$s</string>
+    <string name="image_count">共%d张</string>
+    
+    <string name="edit">编辑</string>
+    <string name="delete">删除(%d)</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_failed">删除失败</string>
+    <string name="my_message">站内消息</string>
+
+    <string name="clear_cache">清除缓存</string>
+    <string name="clear_cache_success">清除缓存成功</string>
+
+
+    <string name="version_name_title">版本号</string>
+
+    <string name="logout">退出登录</string>
+    
+    
+    <!-- 异常信息 -->
+    <string name="server_error_data">服务器返回数据异常</string>
+    <string name="request_failed">请求失败</string>
+    
+    <string-array name="main_tab">
+        <item>热点</item>
+        <item>版块</item>
+    </string-array>
+    
+    <string-array name="my_favorites">
+        <item>收藏帖子</item>
+        <item>收藏版块</item>
+    </string-array>
+    <string name="reply">回复</string>
+    <string name="reply_author">回复楼主</string>
+    <string name="page_number">%1$s 页</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="refreshing">正在刷新</string>
+    <string name="release_to_refresh">松开以刷新</string>
+
+    <string name="pull_to_load">上拉刷新</string>
+    <string name="loading">正在加载</string>
+    <string name="wait_a_moment">正在加载,请稍等</string>
+
+
+    <string name="release_to_load">松开以加载更多</string>
+
+
+    <string name="share">分享</string>
+    <string name="fav">收藏</string>
+    <string name="order">倒序查看</string>
+    <string name="jump">跳页</string>
+
+    <string name="fav_alright">已收藏</string>
+
+
+
+    <string name="fav_success">收藏成功</string>
+    <string name="fav_fail">收藏失败</string>
+
+
+    <string name="fav_del_success">删除收藏成功</string>
+    <string name="fav_del_fail">删除收藏失败</string>
+
+
+    <string name="send_away">发送</string>
+
+    <string name="send">发帖</string>
+    <string name="upload_fail">上传失败</string>
+
+    <string name="reply_success">回复成功</string>
+    <string name="reply_fail">回复失败</string>
+
+    <string name="new_thread_success">发表主题成功</string>
+    <string name="new_thread_fail">发表主题失败</string>
+
+    <string name="not_allow_reply">此人不允许你回复他的帖子</string>
+    <string name="not_allow_new_thread">此版块不允许你发新帖</string>
+
+    <!--<string name="fav_alright_message">已收藏，无需再收藏</string>-->
+
+    <string name="avatar_repalce_failed">头像修改失败</string>
+
+
+    <string name="no_select">未选择</string>
+
+    <string-array name="my_thread">
+        <item>我的主帖</item>
+        <item>我的回帖</item>
+    </string-array>
+    <string-array name="other_thread">
+        <item>TA的主帖</item>
+        <item>TA的回帖</item>
+    </string-array>
+
+
+    <string name="response_empty">返回数据为空</string>
+    <string name="response_module_not_exists">调用接口发生错误，请检查插件是否正确安装</string>
+    <string name="response_not_json">返回数据格式错误</string>
+
+
+
+</resources>

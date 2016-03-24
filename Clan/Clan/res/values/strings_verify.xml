@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="verify_error_page_number_1">页码不能为空</string>
+    <string name="verify_error_page_number_2">页码不能小于1</string>
+    <string name="verify_error_page_number_3">页码不能大于总页数</string>
+
+
+    <string name="verify_error_post_number_1">页码不能为空</string>
+    <string name="verify_error_post_number_2">页码不能小于1</string>
+    <string name="verify_error_post_number_3">页码不能大于总页数</string>
+
+    <string name="verify_error_empty_title_input">标题不能为空</string>
+    <string name="verify_error_empty_content_input">内容不能为空</string>
+    <string name="verify_error_empty_type_select">请选择分类</string>
+    <string name="verify_error_empty_forum_select">请选择版块</string>
+
+    <string name="verify_error_empty_input">输入不能为空</string>
+
+    
+</resources>

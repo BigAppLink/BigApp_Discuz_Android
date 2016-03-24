@@ -1,0 +1,185 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+
+
+
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+#-ignorewarnings
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-dontoptimize
+
+
+-dontwarn
+-dontskipnonpubliclibraryclassmembers
+
+#--------注解START---------
+-keepattributes *Annotation*
+-keep class * extends java.lang.annotation.Annotation { *; }
+-keep class * extends com.youzu.android.framework.json.annotation { *; }
+#--------注解END---------
+
+#--------不优化泛型和反射---------
+-keepattributes Signature
+#--------不优化泛型和反射---------
+
+#------------android-support-v4.jar  begin---------------
+-dontwarn android.support.v4.**
+-keep class android.support.v4.** { *; }
+-keep interface android.support.v4.app.** { *; }
+-keep public class * extends android.support.v4.**
+-keep public class * extends android.app.**
+#----------android-support-v4.jar  end-------------------
+
+#------------android-support-v4.jar  begin---------------
+-dontwarn android.support.v13.**
+-keep class android.support.v13.** { *; }
+-keep interface android.support.v13.app.** { *; }
+-keep public class * extends android.support.v13.**
+-keep public class * extends android.app.**
+#----------android-support-v4.jar  end-------------------
+
+
+#------------sina weibo begin-------------------
+-dontwarn android.webkit.WebView
+-keep public class android.webkit.WebView {*;}
+-dontwarn android.webkit.WebViewClient
+-keep public class android.webkit.WebViewClient {*;}
+-dontwarn com.weibo.net.**
+-keep class com.weibo.net.** {*;}
+#------------sina weibo end-------------------
+
+
+#------------slidingmenu begin----------
+#-libraryjars ../com.zhao/libs/slidingmenu.jar
+-dontwarn  com.slidingmenu.lib.**
+-keep class com.slidingmenu.lib.**{*;}
+-dontwarn  com.slidingmenu.lib.app.**
+-keep class com.slidingmenu.lib.app.**{*;}
+#------------slidingmenu end------------
+
+
+
+#------------ viewpagerindicator begin----------
+-dontwarn  com.viewpagerindicator.**
+-keep class com.viewpagerindicator.**{*;}
+#------------ viewpagerindicator end------------
+
+
+#-dontwarn com.kit.**
+#-keep class com.kit.**{*;}
+
+-dontwarn cn.sharesdk.**
+-keep class cn.sharesdk.**{*;}
+
+-dontwarn m.framework.**
+-keep class m.framework.**{*;}
+
+-dontwarn com.squareup.picasso.**
+-keep class com.squareup.picasso.**{*;}
+
+-keep public class org.apache.commons.httpclient.** {*;}
+-keep public class org.apache.commons.httpclient.auth.** {*;}
+-keep public class org.apache.commons.httpclient.cookie.** {*;}
+-keep public class org.apache.commons.httpclient.methods.** {*;}
+-keep public class org.apache.commons.httpclient.params.** {*;}
+-keep public class org.apache.commons.httpclient.util.** {*;}
+-keep public class org.apache.commons.codec.net.** {*;}
+-keep public class org.apache.commons.logging.** {*;}
+-keep public class org.apache.commons.logging.impl.** {*;}
+-keep public class org.apache.commons.codec.** {*;}
+-keep public class org.apache.commons.codec.binary.** {*;}
+
+#-libraryjars libs/utils.jar
+-dontwarn com.youzu.android.framework.**
+-keep class com.youzu.android.framework.**{*;}
+-keep class com.youzu.android.framework.http.client.HttpRequest.HttpMethod.** {*;}
+-keep class com.youzu.android.framework.bitmap.callback.** {*;}
+
+-dontwarn com.nineoldandroids.**
+-keep interface com.nineoldandroids.**
+-keep class com.nineoldandroids.**{*;}
+
+-dontwarn com.youzu.clan.base.callback.**
+-keep class com.youzu.clan.base.callback.**{*;}
+-keep class * extends com.youzu.clan.base.callback.**
+
+-dontwarn com.youzu.clan.base.common.**
+-keep class com.youzu.clan.base.common.**{*;}
+
+-dontwarn com.youzu.clan.base.config.**
+-keep class com.youzu.clan.base.config.**{*;}
+
+-dontwarn com.youzu.clan.base.enums.**
+-keep class com.youzu.clan.base.enums.**{*;}
+
+#-dontwarn com.youzu.clan.base.util.**
+#-keep class com.youzu.clan.base.util.**{*;}
+
+-keep class com.youzu.clan.base.util.ClanBaseUtils {
+    *** getFormhash(***);
+    *** getAllowUpload(***);
+    *** dealFail(***,***);
+}
+
+
+-dontwarn com.youzu.clan.base.json.**
+-keep class com.youzu.clan.base.json.**{*;}
+
+
+-dontwarn com.youzu.clan.base.widget.**
+-keep class com.youzu.clan.base.widget.**{*;}
+
+
+-dontwarn com.youzu.clan.base.net.**
+-keep class com.youzu.clan.base.net.**{*;}
+
+#-dontwarn com.youzu.clan.base.json.mobclickagent.**
+#-keep class com.youzu.clan.base.json.mobclickagent.**{*;}
+
+
+-keepclassmembers public class * {
+   void set*(***);
+   *** get*();
+}
+
+# 第三方jar有R文件,需要keep
+-keepclassmembers class **.R$* {
+    public static *;
+}
+
+# 枚举类不能去混淆
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+
+
+
+#
+#-dontwarn com.youzu.clan.base.**
+#-keep class com.youzu.clan.base.**{*;}
+

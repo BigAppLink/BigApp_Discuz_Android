@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.youzu.clan.base.widget.list.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item">
+
+    <include layout="@layout/include_line_thin" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/content_border">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_module"
+            android:button="@null"
+            android:checked="false"
+            android:clickable="false"
+            android:drawableLeft="@drawable/selector_list_item_checkbox"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/checkbox"
+            android:background="@drawable/selector_list_item"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/content_border"
+                android:maxLines="2"
+                android:src="@drawable/ic_launcher"
+                android:text="@string/default_value"
+                android:textColor="@color/text_content_main"
+                android:textSize="@dimen/text_size_4" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="@string/default_value"
+                android:textColor="@color/text_small"
+                android:textSize="@dimen/text_size_1" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/include_line_thin" />
+    </LinearLayout>
+</com.youzu.clan.base.widget.list.CheckableRelativeLayout>

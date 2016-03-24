@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="WithTitleEditText">
+
+        <!-- 控件背景 -->
+        <attr name="WithTitleEditText_background" format="reference" />
+
+        <!-- 标题文字 -->
+        <attr name="WithTitleEditText_title" format="string" />
+
+        <!-- 标题文字 -->
+        <attr name="WithTitleEditText_title_color" format="color" />
+
+        <!-- 标题文字大小 -->
+        <attr name="WithTitleEditText_title_size" format="dimension" />
+
+        <!-- 搜索框内hint文字 -->
+        <attr name="WithTitleEditText_hint" format="string" />
+
+        <!-- edittext背景 -->
+        <attr name="WithTitleEditText_edittext_background" format="reference" />
+
+        <!-- edittext输入文字的颜色 -->
+        <attr name="WithTitleEditText_edittext_text_color" format="color" />
+
+        <!-- edittext输入文字的颜色 -->
+        <attr name="WithTitleEditText_edittext_singleLine" format="boolean" />
+        <!-- edittext输入文字的颜色 -->
+        <attr name="WithTitleEditText_edittext_maxLines" format="integer" />
+        <!-- edittext输入文字的颜色 -->
+        <attr name="WithTitleEditText_edittext_maxHeight" format="dimension" />
+        <!-- integer正整数、signed带符号整数、decimal带小数点浮点数 -->
+        <attr name="WithTitleEditText_edittext_numeric">
+            <flag name="integer" value="0x0" />
+            <flag name="signed" value="0x1" />
+            <flag name="decimal" value="0x2" />
+        </attr>
+
+        <!-- integer正整数、signed带符号整数、decimal带小数点浮点数 -->
+        <attr name="WithTitleEditText_edittext_inputType">
+            <flag name="nomarl" value="0x0" />
+            <flag name="number" value="0x1" />
+            <flag name="phone" value="0x2" />
+            <flag name="datetime" value="0x3" />
+            <flag name="email" value="0x4" />
+            <flag name="password" value="0x5" />
+        </attr>
+
+        <!-- 清除图标（触发清空的图标） -->
+        <attr name="WithTitleEditText_delete_icon" format="reference" />
+
+        <!-- edittext文字,是否居左 -->
+        <attr name="WithTitleEditText_is_left" format="boolean" />
+
+        <!-- 后缀字符 -->
+        <attr name="WithTitleEditText_suffix_string" format="string" />
+
+        <!-- ivRightSrc 最右边图片 -->
+        <attr name="WithTitleEditText_iv_right_src" format="reference" />
+
+
+
+        <!-- 标题文字 -->
+        <attr name="WithTitleEditText_margin" format="dimension" />
+        <!-- 标题文字 -->
+        <attr name="WithTitleEditText_margin_left" format="dimension" />
+        <!-- 标题文字 -->
+        <attr name="WithTitleEditText_margin_right" format="dimension" />
+    </declare-styleable>
+
+</resources>

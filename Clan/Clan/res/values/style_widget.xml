@@ -1,0 +1,129 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="imageview_round">
+        <item name="android:background">@color/transparent</item>
+        <item name="solid_color">#80000000</item>
+
+        <item name="border_crop">1dp</item>
+        <item name="border_color">#80FFFFFF</item>
+        <item name="border_width">2dp</item>
+        <item name="border_overlay">false</item>
+
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="imageview_round_white_border">
+        <item name="android:background">@color/transparent</item>
+        <item name="solid_color">@color/white</item>
+        <item name="border_crop">0dp</item>
+        <item name="border_color">@color/white</item>
+        <item name="border_width">3dp</item>
+        <item name="border_overlay">true</item>
+
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="imageview_round_no_border">
+        <item name="android:background">@color/transparent</item>
+        <item name="solid_color">#80000000</item>
+
+        <item name="border_crop">1dp</item>
+        <item name="border_color">#80FFFFFF</item>
+        <item name="border_width">0dp</item>
+        <item name="border_overlay">false</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="imageview_round_corner">
+        <item name="android:background">@color/transparent</item>
+        <item name="solid_color">#80000000</item>
+
+        <item name="riv_corner_radius">5dp</item>
+        <item name="border_color">#80FFFFFF</item>
+        <item name="border_width">2dp</item>
+        <item name="border_overlay">false</item>
+
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="with_title_tv">
+        <item name="WithTitleTextView_content_color">@color/dark_gray</item>
+        <item name="WithTitleTextView_margin_right">8dp</item>
+        <item name="WithTitleTextView_content">@string/default_value</item>
+        <item name="android:padding">@dimen/content_border</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="with_title_et">
+        <item name="WithTitleEditText_margin_right">8dp</item>
+        <item name="WithTitleEditText_hint">@string/tap_to_input</item>
+        <item name="android:padding">@dimen/content_border</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <style name="with_segmented_control_tv">
+        <item name="WithSegmentedControlTextView_margin_left">@dimen/margin_default_large</item>
+        <item name="WithSegmentedControlTextView_margin_right">@dimen/margin_default_large</item>
+        <item name="WithSegmentedControlTextView_background">@color/white</item>
+    </style>
+
+    <style name="go_textview">
+        <item name="GoBackTextView_margin_left">@dimen/margin_default_large</item>
+        <item name="GoBackTextView_margin_right">@dimen/margin_default_large</item>
+        <item name="GoBackTextView_iv_go_src">@drawable/ic_arrow_gray</item>
+        <item name="GoBackTextView_background">@color/white</item>
+    </style>
+
+    <style name="ratingBarStyle" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_drawable</item>
+        <item name="android:minHeight">100px</item>
+        <item name="android:maxHeight">100px</item>
+    </style>
+
+    <style name="with_ratingbar_textview">
+        <item name="WithRatingBarTextView_margin_left">@dimen/margin_default_large</item>
+        <item name="WithRatingBarTextView_margin_right">@dimen/margin_default_large</item>
+        <item name="WithRatingBarTextView_background">@color/white</item>
+        <item name="WithRatingBarTextView_ratingbar_num">5</item>
+    </style>
+
+    <style name="edit_del">
+        <item name="GoBackTextView_margin_left">@dimen/margin_default_large</item>
+        <item name="WithDelEditText_hint_color">@color/dark_gray</item>
+        <item name="WithDelEditText_background">@color/white</item>
+    </style>
+
+    <style name="button_commit">
+        <item name="android:background">@drawable/selector_login_btn</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_navigation</item>
+        <item name="android:layout_marginLeft">45dp</item>
+        <item name="android:layout_marginRight">45dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/text_size_5</item>
+    </style>
+
+    <style name="radio_button">
+        <item name="android:background">@drawable/selector_filter_indicator</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/selector_search_text</item>
+        <item name="android:textSize">@dimen/text_size_3</item>
+    </style>
+
+    <style name="recomm_radio_button" parent="radio_button">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/selector_normal_text</item>
+    </style>
+</resources>

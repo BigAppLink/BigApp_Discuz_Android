@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="btn1" type="id">false</item>
+    <item name="btn2" type="id">false</item>
+    <item name="btnCancel" type="id">false</item>
+    <item name="btnOK" type="id">false</item>
+
+</resources>

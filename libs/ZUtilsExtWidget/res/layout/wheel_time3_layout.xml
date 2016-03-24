@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/wheel_layout_bg"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="20dp" >
+
+        <com.kit.widget.wheel.WheelView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.kit.widget.wheel.WheelView
+            android:id="@+id/hour"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content" />
+
+        <com.kit.widget.wheel.WheelView
+            android:id="@+id/mins"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content" />
+
+        <com.kit.widget.wheel.WheelView
+            android:id="@+id/ampm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

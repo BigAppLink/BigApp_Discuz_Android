@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_list_item"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp" >
+
+        <com.kit.imagelib.widget.imageview.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            style="@style/imageview_round"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/content_border"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_protrait_solid" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/avatar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_3"
+                android:layout_height="wrap_content"
+                android:text="name" />
+
+            <TextView
+                android:id="@+id/userPosition"
+                android:textColor="#a6a6a6"
+                android:textSize="@dimen/text_size_2"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/sendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#a4a4a4"
+            android:textSize="@dimen/text_size_2"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:drawablePadding="5dp"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_search_send_msg"
+            android:background="@drawable/bg_search_send_msg"
+            android:layout_marginRight="@dimen/content_border"
+            android:text="@string/send_message"
+            android:layout_centerVertical="true" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/newFriendsAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="19dp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/agreeFriend"
+                android:layout_width="wrap_content"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_2"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/selector_agree_friend"
+                android:text="@string/add_friend"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/refuseFriend"
+                android:layout_width="wrap_content"
+                android:textColor="@color/text_hint"
+                android:layout_marginLeft="6dp"
+                android:paddingRight="10dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/selector_agree_friend"
+                android:paddingLeft="10dp"
+                android:text="@string/ignore_friends"
+                android:textSize="@dimen/text_size_2"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/agreedFriend"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/text_size_2"
+                android:visibility="gone"
+                android:text="@string/agreed_friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/include_line"/>
+
+</LinearLayout>

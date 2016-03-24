@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SlidingTab">
+
+        <!-- 底部分割线的颜色-->
+        <attr name="bottomBorderColor" format="color" />
+        <!-- 底部分割线颜色的高度-->
+        <attr name="bottomBorderHeight" format="dimension" />
+
+        <!-- 选中的指示的颜色-->
+        <attr name="selectedIndicatorColor" format="color" />
+        <!-- 未选中的指示的颜色-->
+        <attr name="unselectedIndicatorColor" format="color" />
+        <!-- 底部分割线颜色的高度-->
+        <attr name="selectedIndicatorHeight" format="dimension" />
+
+
+        <!-- 竖直分割线的颜色-->
+        <attr name="tabDividerColor" format="color" />
+        <!-- 竖直分割线的高度-->
+        <attr name="tabDividerHeight" format="dimension" />
+        <!-- 竖直分割线的宽度-->
+        <attr name="tabDividerWidth" format="dimension" />
+
+        <!-- 选中文字的颜色-->
+        <attr name="tabSeletedTextColor" format="color" />
+        <!-- 未选中文字的颜色-->
+        <attr name="tabUnseletedTextColor" format="color" />
+        <!-- 文字的大小-->
+        <attr name="tabTextSize" format="dimension" />
+
+        <!-- 导航条是否等分-->
+        <attr name="isEquipotent" format="boolean" />
+    </declare-styleable>
+
+</resources>

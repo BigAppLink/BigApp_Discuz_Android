@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="test_grally"
+        android:text="测试画廊" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="test_select_pic"
+        android:text="测试选图" />
+
+    <GridView
+        android:id="@+id/image_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/white"
+        android:columnWidth="100dp"
+        android:listSelector="@android:color/white"
+        android:numColumns="4"
+        android:verticalSpacing="10dp"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" >
+    </GridView>
+
+</LinearLayout>

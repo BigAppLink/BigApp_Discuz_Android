@@ -1,0 +1,43 @@
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+libs/libray/bin/
+gen/
+libs/library/gen/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+.settings/*
+proguard-project.txt
+
+# IntelliJ project files
+*.iws
+*.iml
+*.ipr
+.idea/
+
+# Gradle files
+.gradle
+gradle
+build
+
+# Mac system files
+.DS_Store
+
+# others
+ant.properties
+build.xml
+META-INF

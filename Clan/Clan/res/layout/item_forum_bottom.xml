@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@drawable/selector_list_item"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/viewAndReply"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/content_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvForumName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_trans_light_gray"
+            android:drawablePadding="5dp"
+            android:paddingLeft="@dimen/content_border"
+            android:paddingRight="@dimen/content_border"
+            android:text="@string/default_value"
+            android:textColor="@color/text_small"
+            android:textSize="@dimen/text_size_1" />
+
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/content_border"
+            android:paddingRight="@dimen/content_border"
+            android:src="@drawable/ic_line_vertical_lighy_gray" />
+
+        <TextView
+            android:id="@+id/reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/icon"
+            android:drawablePadding="5dp"
+            android:text="@string/default_value"
+            android:textColor="@color/text_small"
+            android:textSize="@dimen/text_size_1" />
+
+        <ImageView
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_default_large"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_point_light_gray"
+            android:textColor="@color/text_small" />
+
+        <TextView
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:text="@string/default_value"
+            android:textColor="@color/text_small"
+            android:textSize="@dimen/text_size_1" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

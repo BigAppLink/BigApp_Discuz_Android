@@ -1,0 +1,9 @@
+<resources>
+
+    <dimen name="floatingactionbutton_size_normal">56dp</dimen>
+    <dimen name="floatingactionbutton_size_mini">40dp</dimen>
+    <dimen name="floatingactionbutton_shadow_size">8dp</dimen>
+
+    <dimen name="floatingactionbutton_mini_shadow_size">6dp</dimen>
+    <dimen name="floatingactionbutton_min_significant_scroll">40dp</dimen>
+</resources>

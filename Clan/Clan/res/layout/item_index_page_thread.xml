@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:orientation="vertical">
+
+
+    <!--<include layout="@layout/include_gray_split" />-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/content_border"
+            android:paddingRight="@dimen/content_border"
+            android:text="@string/default_value"
+            android:textColor="@color/text_black_ta_title"
+            android:textSize="@dimen/text_size_ta_title" />
+
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content_title"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/content_border"
+            android:paddingRight="@dimen/content_border"
+            android:text="@string/default_value"
+            android:textColor="@color/text_black_content"
+            android:textSize="@dimen/text_size_ta_content" />
+
+        <LinearLayout
+            android:id="@+id/llImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_marginLeft="@dimen/margin_module"
+            android:layout_marginRight="@dimen/margin_module"
+            android:layout_marginTop="@dimen/margin_module"
+            android:orientation="horizontal">
+
+            <include layout="@layout/include_item_thread_images" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/include_item_forum_thread_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/include_line_thin" />
+</LinearLayout>

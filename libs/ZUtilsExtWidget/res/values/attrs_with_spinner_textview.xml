@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="WithSpinnerTextView">
+
+        <!-- 控件背景 -->
+        <attr name="WithSpinnerTextView_background" format="reference" />
+
+        <!-- 标题文字 -->
+        <attr name="WithSpinnerTextView_title" format="string" />
+
+        <!-- 标题文字 -->
+        <attr name="WithSpinnerTextView_title_size" format="dimension" />
+
+        <!-- 标题文字颜色 -->
+        <attr name="WithSpinnerTextView_title_color" format="color" />
+
+        <!-- 从activity带回的文字 -->
+        <attr name="WithSpinnerTextView_content" format="string" />
+
+        <!-- 标题文字 -->
+        <attr name="WithSpinnerTextView_content_size" format="dimension" />
+
+        <!-- 从activity带回的文字颜色 -->
+        <attr name="WithSpinnerTextView_content_color" format="color" />
+
+        <!-- 从activity带回的文字,是否居左 -->
+        <attr name="WithSpinnerTextView_is_content_text_left" format="boolean" />
+
+
+
+        <!-- 标题文字 -->
+        <attr name="WithSpinnerTextView_margin" format="dimension" />
+        <!-- 标题文字 -->
+        <attr name="WithSpinnerTextView_margin_left" format="dimension" />
+        <!-- 标题文字 -->
+        <attr name="WithSpinnerTextView_margin_right" format="dimension" />
+
+    </declare-styleable>
+
+</resources>

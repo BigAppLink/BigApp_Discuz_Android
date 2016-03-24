@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_divider"
+                android:background="@color/divider_line" />
+
+            <com.kit.widget.edittext.WithDelEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/ic_login_user_edit"
+                android:drawablePadding="9dp"
+                android:gravity="center_vertical"
+                android:hint="@string/account"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_4"
+                app:WithDelEditText_background="@color/transparent"
+                app:WithDelEditText_hint="@string/account"
+                app:WithDelEditText_hint_color="@color/text_hint"
+                app:WithDelEditText_icon="@drawable/ic_login_user_edit" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_divider"
+                android:layout_marginLeft="48dp"
+                android:background="@color/divider_line" />
+
+            <com.kit.widget.edittext.PasswordEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/ic_login_user_edit"
+                android:drawablePadding="9dp"
+                android:gravity="center_vertical"
+                android:hint="@string/account"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_4"
+                app:PasswordEditText_background="@color/transparent"
+                app:PasswordEditText_hint="@string/password"
+                app:PasswordEditText_hint_color="@color/text_hint"
+                app:PasswordEditText_icon="@drawable/ic_login_lock_edit" />
+
+            <!--<EditText-->
+            <!--android:id="@+id/password"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:background="@color/transparent"-->
+            <!--android:drawableLeft="@drawable/ic_login_lock_edit"-->
+            <!--android:drawablePadding="9dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:hint="@string/password"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:paddingRight="20dp"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="@color/text_black"-->
+            <!--android:textColorHint="@color/text_hint"-->
+            <!--android:textSize="@dimen/text_size_4" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_divider"
+                android:layout_marginLeft="48dp"
+                android:background="@color/divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_default"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_login_safety_edit" />
+
+                <com.kit.widget.spinner.BetterSpinner
+                    android:id="@+id/question"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_default"
+                    android:background="@color/transparent"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/text_gray"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/text_size_3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_default"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_divider"
+                    android:layout_marginLeft="48dp"
+                    android:background="@color/divider_line" />
+
+                <EditText
+                    android:id="@+id/answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/please_input_answer"
+                    android:paddingLeft="48dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/text_size_4" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_divider"
+                android:background="@color/divider_line" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/bind"
+            style="@style/button_commit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_navigation"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/bind_with_space" />
+
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="15dp"
+            android:gravity="right"
+            android:text="@string/register_as_new_user"
+            android:textColor="@color/text_red" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_divider"
+                android:layout_weight="1"
+                android:background="@color/divider_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textColor="@color/text_small"
+                android:textSize="@dimen/text_size_1" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_divider"
+                android:layout_weight="1"
+                android:background="@color/divider_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/yz_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_navigation"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/selector_yz_login_btn"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:contentDescription="@string/yz_login"
+                android:src="@drawable/ic_yz" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/yz_login"
+                android:textColor="#422727"
+                android:textSize="@dimen/text_size_5" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

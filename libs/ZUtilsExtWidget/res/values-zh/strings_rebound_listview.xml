@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="rebound_listview_header_hint_normal">@string/init_data</string>
+    <string name="rebound_listview_header_hint_ready">@string/init_data</string>
+    <string name="rebound_listview_header_hint_loading">正在加载</string>
+    <string name="rebound_listview_footer_hint_normal">查看更多</string>
+    <string name="rebound_listview_footer_hint_ready">松开加载更多</string>
+
+</resources>

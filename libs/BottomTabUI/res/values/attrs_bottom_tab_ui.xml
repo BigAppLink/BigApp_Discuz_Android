@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BottomItemView">
+        <attr name="BottomItemView_icon_normal" format="reference" />
+        <attr name="BottomItemView_icon_margin" format="dimension" />
+        <attr name="BottomItemView_selected_color" format="color" />
+        <attr name="BottomItemView_normal_color" format="color" />
+        <attr name="BottomItemView_text" format="string" />
+        <attr name="BottomItemView_text_size" format="dimension" />
+    </declare-styleable>
+</resources>

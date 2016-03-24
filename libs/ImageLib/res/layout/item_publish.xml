@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/framelayout"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:descendantFocusability="blocksDescendants" >
+
+        <com.kit.imagelib.view.MyImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="#00000000"
+            android:src="@drawable/no_picture" />
+
+
+        <ImageView
+            android:id="@+id/ivDel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="2dp"
+            android:layout_gravity="right"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_del_x"/>
+    </FrameLayout>
+</LinearLayout>

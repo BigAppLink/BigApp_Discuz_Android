@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/include_gray_split_tiny" />-->
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/include_item_forum_thread_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="left"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/content_border"
+            android:text="@string/default_value"
+            android:textColor="@color/text_black_ta_title"
+            android:textSize="@dimen/text_size_ta_title" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/content_title"
+            android:layout_marginBottom="@dimen/margin_module"
+            android:layout_marginLeft="@dimen/margin_module"
+            android:layout_marginRight="@dimen/margin_module"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_subject_default_image" />
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@id/image1"
+            android:layout_marginTop="@dimen/margin_module"
+            android:background="@color/transparent" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/include_gray_split_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

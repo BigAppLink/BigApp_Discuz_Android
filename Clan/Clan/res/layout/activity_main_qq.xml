@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_title"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@id/top"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="vertical" />
+
+        <com.kit.widget.slidingtab.SlidingTabLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/slidingIndicator"
+            app:isEquipotent="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_default"
+            android:background="@color/white"
+            android:visibility="visible" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/background" />
+    </LinearLayout>
+</LinearLayout>

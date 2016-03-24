@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_list_item"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp" >
+
+        <com.kit.imagelib.widget.imageview.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            style="@style/imageview_round"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_protrait_solid" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/avatar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_3"
+                android:layout_height="wrap_content"
+                android:text="name" />
+
+            <TextView
+                android:id="@+id/userPosition"
+                android:textColor="#a6a6a6"
+                android:textSize="@dimen/text_size_2"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#a4a4a4"
+            android:textSize="@dimen/text_size_2"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_search_send_msg"
+            android:background="@drawable/bg_search_send_msg"
+            android:layout_marginRight="16dp"
+            android:text="@string/send_message"
+            android:layout_centerVertical="true" >
+        </TextView>
+    </RelativeLayout>
+
+    <include layout="@layout/include_line" />
+
+</LinearLayout>

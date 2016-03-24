@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/update_tv_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="12dip"
+        android:text="@string/analysissdk_update_title"
+        android:textColor="#ff3cac17"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#ff3cac17" />
+
+    <TextView
+        android:id="@+id/update_tv_dialog_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dip"
+        android:lineSpacingMultiplier="1.1"
+        android:maxHeight="250dip"
+        android:singleLine="false"
+        android:scrollbars="vertical"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/update_cb_ignore"
+        style="@style/AnalysisSDK_UpdateCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:minWidth="150dip"
+        android:text="@string/analysissdk_update_ignore"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#ff737373" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/update_btn_dialog_ok"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/analysissdk_dialog_btn_back"
+            android:padding="10dip"
+            android:text="@string/analysissdk_update_now"
+            android:textColor="#ffffff" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#ff737373" />
+
+        <Button
+            android:id="@+id/update_btn_dialog_cancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/analysissdk_dialog_btn_back"
+            android:padding="10dip"
+            android:text="@string/analysissdk_update_notnow"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

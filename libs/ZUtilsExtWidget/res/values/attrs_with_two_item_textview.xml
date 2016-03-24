@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WithTwoItemTextView">
+        <attr name="WithTwoItemTextView_name_1" format="string" />
+        <attr name="WithTwoItemTextView_name_2" format="string" />
+        <attr name="WithTwoItemTextView_content_1" format="string" />
+        <attr name="WithTwoItemTextView_content_2" format="string" />
+        <attr name="WithTwoItemTextView_content_arrow_1" format="reference" />
+        <attr name="WithTwoItemTextView_content_arrow_2" format="reference" />
+        <attr name="WithTwoItemTextView_name_color" format="color" />
+        <attr name="WithTwoItemTextView_content_color" format="color" />
+        <attr name="WithTwoItemTextView_background" format="color" />
+        <attr name="WithTwoItemTextView_item_background" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="WithItemTextView">
+        <attr name="WithItemTextView_name" format="string" />
+        <attr name="WithItemTextView_content" format="string" />
+        <attr name="WithItemTextView_content_arrow" format="reference" />
+        <attr name="WithItemTextView_name_color" format="color" />
+        <attr name="WithItemTextView_content_color" format="color" />
+        <attr name="WithItemTextView_editable" format="boolean" />
+        <attr name="WithItemTextView_edit_hint_color" format="color" />
+    </declare-styleable>
+
+</resources>

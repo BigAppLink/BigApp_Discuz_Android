@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <!--<com.balysv.materialmenu.MaterialMenuView-->
+            <!--android:id="@+id/material_menu_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:mm_color="#ffcc0000"-->
+            <!--app:mm_scale="4"-->
+            <!--app:mm_strokeWidth="2"-->
+            <!--app:mm_transformDuration="3000"-->
+            <!--app:mm_visible="true" />-->
+            <com.kit.widget.slidingtab.SlidingTabLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/slidingIndicator"
+                app:isEquipotent="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_default"
+                android:background="@color/white"
+                android:visibility="visible" />
+
+
+            <com.youzu.clan.base.widget.SuperViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/background" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/llMenu"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/bg_title"
+            android:dividerHeight="0dp">
+
+            <RelativeLayout
+                android:id="@+id/menuReplace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

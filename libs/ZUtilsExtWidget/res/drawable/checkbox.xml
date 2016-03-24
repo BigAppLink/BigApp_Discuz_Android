@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/choice1_1" android:state_checked="false"/>
+    <!-- default -->
+
+    <item android:drawable="@drawable/choice1_2" android:state_checked="true"/>
+    <!-- checked -->
+
+</selector>

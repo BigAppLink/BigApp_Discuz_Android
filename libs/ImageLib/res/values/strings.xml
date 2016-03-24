@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ImageLib</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="load_failed">加载失败</string>
+
+    <string name="complete">完成</string>
+    <string name="save">保存</string>
+    <string name="save_failed">保存失败</string>
+    <string name="save_successed">保存成功</string>
+    <string name="wait_a_moment">正在加载,请稍等</string>
+
+</resources>

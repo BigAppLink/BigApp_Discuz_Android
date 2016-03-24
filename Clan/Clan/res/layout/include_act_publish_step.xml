@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/z_bg_c_act_publish_step"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_name_1"
+            style="@style/txt_act_publish_step_item"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/z_act_publish_step_item_0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_item_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_name_2"
+            style="@style/txt_act_publish_step_item"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/z_act_publish_step_item_1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_item_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/txt_act_publish_step_item"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/z_act_publish_step_item_2" />
+    </RelativeLayout>
+
+
+</LinearLayout>

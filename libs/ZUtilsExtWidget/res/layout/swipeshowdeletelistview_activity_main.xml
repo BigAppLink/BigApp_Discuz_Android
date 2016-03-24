@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.kit"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SwipeShowDeleteSampleActivity"
+    tools:ignore="LibraryCustomView" >
+
+    <com.kit.widget.listview.swipeshowdeletelistview.SwipeShowDeleteListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff4f7f9"
+        android:cacheColorHint="#00000000"
+        android:divider="#dddbdb"
+        android:dividerHeight="1dp" />
+
+    <!--
+         是可以通过 设置
+        app:SwipeShowDeleteListView_right_width="120dp" 来定义右边滑动的大小的
+    -->
+    <!--
+         <com.kit.widget.listview.swipeshowdeletelistview.SwipeShowDeleteListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff4f7f9"
+        android:cacheColorHint="#00000000"
+        android:divider="#dddbdb"
+        android:dividerHeight="1dp"
+        app:SwipeShowDeleteListView_right_width="120dp"
+        />
+    -->
+
+</RelativeLayout>

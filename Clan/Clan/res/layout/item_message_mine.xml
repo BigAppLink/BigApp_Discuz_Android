@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.youzu.clan.base.widget.list.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_message"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="@dimen/content_border"
+    android:paddingLeft="@dimen/content_border"
+    android:paddingRight="@dimen/content_border"
+    android:paddingTop="@dimen/content_border">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_module"
+        android:button="@null"
+        android:checked="false"
+        android:clickable="false"
+        android:drawableLeft="@drawable/selector_list_item_checkbox"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="gone" />
+
+    <com.kit.imagelib.widget.imageview.circleimageview.CircleImageView
+        android:id="@+id/icon"
+        style="@style/imageview_round"
+        android:layout_width="@dimen/height_message"
+        android:layout_height="@dimen/height_message"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toLeftOf="@id/checkbox"
+        android:src="@drawable/ic_protrait_solid" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_default"
+        android:layout_marginRight="@dimen/padding_default"
+        android:layout_toLeftOf="@id/icon">
+
+        <RelativeLayout
+            android:id="@+id/rlPB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_default">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@drawable/progress_bar_light_gray"
+                android:indeterminateOnly="true"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ib"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@color/transparent"
+                android:focusable="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/loading_red"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rlPB"
+            android:background="@drawable/bg_message_mine"
+            android:gravity="left|center_vertical"
+            android:minHeight="@dimen/height_message"
+            android:paddingBottom="@dimen/margin_default_medium"
+            android:paddingLeft="@dimen/padding_default"
+            android:paddingRight="12dp"
+            android:paddingTop="@dimen/margin_default_medium"
+            android:text="@string/default_value"
+            android:textColor="@color/text_black_selected"
+            android:textSize="@dimen/text_size_4" />
+
+
+    </RelativeLayout>
+</com.youzu.clan.base.widget.list.CheckableRelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/padding_default"
+        android:paddingRight="@dimen/padding_default"
+        android:background="@color/background">
+
+        <RelativeLayout
+            android:id="@+id/rlEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<include-->
+            <!--layout="@layout/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+            <com.keyboard.view.EmoticonsEditText
+                android:id="@+id/et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_default_large"
+                android:background="@drawable/border_edit_comment"
+                android:gravity="top|left"
+                android:hint="@string/hint_title"
+                android:maxLines="2"
+                android:minLines="1"
+                android:padding="@dimen/padding_default"
+                android:textSize="@dimen/text_size_3"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/chooseThread"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et1"
+                android:layout_marginTop="@dimen/margin_default_large"
+                android:background="@drawable/border_edit_comment"
+                android:gravity="center_vertical"
+                android:hint="@string/choose_forum"
+                android:padding="@dimen/padding_default"
+                android:textSize="@dimen/text_size_3"
+                android:visibility="gone" />
+
+            <com.kit.widget.spinner.BetterSpinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chooseThread"
+                android:layout_marginTop="@dimen/margin_default_large"
+                android:background="@drawable/border_edit_comment"
+                android:padding="@dimen/padding_default"
+                android:textSize="@dimen/text_size_3"
+                android:visibility="gone" />
+
+            <com.keyboard.view.EmoticonsEditText
+                android:id="@+id/et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner"
+                android:layout_marginTop="@dimen/margin_default_large"
+                android:background="@drawable/border_edit_comment"
+                android:gravity="top|left"
+                android:hint="@string/hint_say_sth"
+                android:maxLines="10"
+                android:minLines="5"
+                android:paddingBottom="40dp"
+                android:paddingLeft="@dimen/padding_default"
+                android:paddingRight="@dimen/padding_default"
+                android:paddingTop="@dimen/padding_default"
+                android:textSize="@dimen/text_size_3" />
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/btnFace"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_alignBottom="@id/et"-->
+            <!--android:layout_margin="@dimen/margin_default_large"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:background="@color/transparent"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:src="@drawable/icon_face_nomal" />-->
+
+
+            <ToggleButton
+                android:id="@+id/tb"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@id/et"
+                android:layout_margin="@dimen/margin_default_large"
+                android:background="@drawable/toggle_btn_face"
+                android:scaleType="fitCenter"
+                android:textOff=""
+                android:textOn="" />
+
+
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlEt"
+            android:layout_marginTop="@dimen/margin_default_large"
+            android:cacheColorHint="@android:color/white"
+            android:columnWidth="100dp"
+            android:listSelector="@android:color/white"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+    </RelativeLayout>
+</LinearLayout>

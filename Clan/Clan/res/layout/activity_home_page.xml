@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_title">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/height_navigation"
+                android:layout_height="@dimen/height_navigation"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_navigation"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/my_home_page" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/include_my_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/content_border" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/include_gray_split" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/group_tips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/content_border"
+                            android:text="@string/group_in"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_size_3" />
+
+                        <TextView
+                            android:id="@+id/group_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/group_tips"
+                            android:gravity="right"
+                            android:paddingRight="@dimen/content_border"
+                            android:text="@string/default_value"
+                            android:textColor="@color/text_gray" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/include_line" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/constellation_tips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/content_border"
+                            android:text="@string/constellation"
+                            android:textColor="@color/text_small"
+                            android:textSize="@dimen/text_size_3" />
+
+                        <TextView
+                            android:id="@+id/constellation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/constellation_tips"
+                            android:paddingBottom="@dimen/content_border"
+                            android:paddingTop="@dimen/content_border"
+                            android:text="@string/default_value"
+                            android:textColor="@color/text_black" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/date_tips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/content_border"
+                            android:text="@string/register_date"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_size_3" />
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/date_tips"
+                            android:gravity="right"
+                            android:paddingRight="@dimen/content_border"
+                            android:text="@string/default_value"
+                            android:textColor="@color/text_gray" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/include_gray_split" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlFriend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/content_border"
+                            android:text="@string/friend_count"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_size_4" />
+
+                        <ImageView
+                            android:id="@+id/arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/content_border"
+                            android:src="@drawable/ic_arrow_right" />
+
+                        <TextView
+                            android:id="@+id/friend_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/arrow"
+                            android:background="@drawable/bg_round_red"
+                            android:gravity="center"
+                            android:text="@string/default_value"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_4" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/include_line_thin" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlThreadReply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/content_border"
+                            android:text="@string/thread_reply_count"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_size_4" />
+
+                        <ImageView
+                            android:id="@+id/arrow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/content_border"
+                            android:src="@drawable/ic_arrow_right" />
+
+                        <TextView
+                            android:id="@+id/thread_reply_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/arrow1"
+                            android:background="@drawable/bg_round_red"
+                            android:gravity="center"
+                            android:text="@string/default_value"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_4" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/include_line_thin" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlThreadPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/thread_tips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/content_border"
+                            android:text="@string/thread_post_count"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_size_4" />
+
+                        <ImageView
+                            android:id="@+id/arrow2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/content_border"
+                            android:src="@drawable/ic_arrow_right" />
+
+                        <TextView
+                            android:id="@+id/thread_post_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/arrow2"
+                            android:background="@drawable/bg_round_red"
+                            android:gravity="center"
+                            android:text="@string/default_value"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_4" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/othersReport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <include layout="@layout/include_gray_split" />
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:visibility="visible">
+
+
+                            <TextView
+                                android:id="@+id/report"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/content_border"
+                                android:text="@string/report"
+                                android:textColor="@color/text_black"
+                                android:textSize="@dimen/text_size_4" />
+
+                            <ImageView
+                                android:id="@+id/arrow3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@string/app_name"
+                                android:padding="@dimen/content_border"
+                                android:src="@drawable/ic_arrow_right" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/include_gray_split" />
+
+
+                        <TextView
+                            android:id="@+id/logout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="@dimen/content_border"
+                            android:text="@string/logout"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_size_4" />
+
+                        <include layout="@layout/include_line" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>
